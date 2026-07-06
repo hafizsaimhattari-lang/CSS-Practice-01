@@ -1,10 +1,16 @@
-﻿# 🏷️ 02 Class Selector Practice
+# 🎯 02 Class Selector Practice
 
 ## 📚 Is Folder Ka Maqsad
-Yeh folder **02 Class Selector Practice** ki practice ke liye hai.
+Class selector ki **doosri practice** — Internal CSS ke sath.
+
+---
+
+## 📁 Files
+| File                                        | Description                              |
+|---------------------------------------------|------------------------------------------|
+| `02 Class Selector (Internal CSS).html`     | HTML + Internal CSS — ek hi file mein    |
 
 ---
 
 ## 📝 Summary
-Is folder mein mojud files 02 Class Selector Practice ke concepts ko clear karne ke liye banayi gayi hain. Code ko check karein aur comments se samjhein.
-
+Is practice mein `<style>` tag ke zariye class selector ko demonstrate kiya gaya hai.

@@ -1,10 +1,17 @@
-﻿# 🏷️ 01 Class Selector Practice
+# 🎯 01 Class Selector Practice
 
 ## 📚 Is Folder Ka Maqsad
-Yeh folder **01 Class Selector Practice** ki practice ke liye hai.
+Class selector ki **pehli practice** — External CSS file ke sath.
+
+---
+
+## 📁 Files
+| File                      | Description                               |
+|---------------------------|-------------------------------------------|
+| `01 Class Selector.html`  | HTML file with multiple classes           |
+| `01 Class Selector.css`   | Bahari CSS file — classes ko style karti hai |
 
 ---
 
 ## 📝 Summary
-Is folder mein mojud files 01 Class Selector Practice ke concepts ko clear karne ke liye banayi gayi hain. Code ko check karein aur comments se samjhein.
-
+Is practice mein HTML elements par classes lagayi gayi hain aur CSS file se unhe design diya gaya hai.
