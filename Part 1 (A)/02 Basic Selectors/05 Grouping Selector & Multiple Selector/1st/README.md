@@ -1,10 +1,17 @@
-﻿# 🏷️ 1st
+# 🎯 01 Grouping Selector — Practice 1
 
 ## 📚 Is Folder Ka Maqsad
-Yeh folder **1st** ki practice ke liye hai.
+Grouping Selector ki **pehli practice** — Ek sath kai elements ko style karna.
+
+---
+
+## 📁 Files
+| File                       | Description                                 |
+|----------------------------|---------------------------------------------|
+| `01 Grouping Selector.html`| HTML file with multiple grouped elements     |
+| `01 Grouping Selector.css` | CSS file with grouped selectors              |
 
 ---
 
 ## 📝 Summary
-Is folder mein mojud files 1st ke concepts ko clear karne ke liye banayi gayi hain. Code ko check karein aur comments se samjhein.
-
+Is practice mein `h1, h2, p` ko ek sath comma se group karke style kiya gaya hai.

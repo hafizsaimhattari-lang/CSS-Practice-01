@@ -1,10 +1,17 @@
-﻿# 🏷️ 2nd
+# 🎯 02 Grouping Selector — Practice 2
 
 ## 📚 Is Folder Ka Maqsad
-Yeh folder **2nd** ki practice ke liye hai.
+Grouping Selector ki **doosri practice** — Multiple aur mixed selectors ko group karna.
+
+---
+
+## 📁 Files
+| File                       | Description                                      |
+|----------------------------|--------------------------------------------------|
+| `02 Grouping Selector.html`| HTML file with mixed element/class/id selectors  |
+| `02 Grouping Selector.css` | CSS with grouped mixed selectors                 |
 
 ---
 
 ## 📝 Summary
-Is folder mein mojud files 2nd ke concepts ko clear karne ke liye banayi gayi hain. Code ko check karein aur comments se samjhein.
-
+Is practice mein element selectors, class selectors sab ko ek sath group kiya gaya hai.
