@@ -1,10 +1,17 @@
-﻿# 🏷️ 02 Second
+# 🎯 02 Second — Descendant Selector Practice 2
 
 ## 📚 Is Folder Ka Maqsad
-Yeh folder **02 Second** ki practice ke liye hai.
+Descendant Selector ki **doosri practice** — complex nested structure.
+
+---
+
+## 📁 Files
+| File                          | Description                         |
+|-------------------------------|-------------------------------------|
+| `02 Descendent Selector.html` | HTML — deep nested elements         |
+| `02 Descendent Selector.css`  | CSS — multiple descendant selectors |
 
 ---
 
 ## 📝 Summary
-Is folder mein mojud files 02 Second ke concepts ko clear karne ke liye banayi gayi hain. Code ko check karein aur comments se samjhein.
-
+Is practice mein zyada complex structure ke saath descendant selector ka use dikha gaya hai.

@@ -1,10 +1,17 @@
-﻿# 🏷️ 01 First
+# 🎯 01 First — Descendant Selector Practice 1
 
 ## 📚 Is Folder Ka Maqsad
-Yeh folder **01 First** ki practice ke liye hai.
+Descendant Selector ki **pehli practice**.
+
+---
+
+## 📁 Files
+| File                          | Description                      |
+|-------------------------------|----------------------------------|
+| `01 Descendent Selector.html` | HTML — nested elements           |
+| `01 Descendent Selector.css`  | CSS — descendant selector use    |
 
 ---
 
 ## 📝 Summary
-Is folder mein mojud files 01 First ke concepts ko clear karne ke liye banayi gayi hain. Code ko check karein aur comments se samjhein.
-
+Is practice mein parent ke andar wale elements ko space ` ` se select kiya gaya hai.
