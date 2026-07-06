@@ -1,0 +1,35 @@
+﻿/*
+    PART 1 (A) - CSS Basic
+    Topic: 1st
+    Objective: Practice exercises for 1st
+*/
+body {
+    background-color:black;
+}
+
+* {
+    color:white;
+}
+
+/* Class Selector */
+    .headings, .paragraph {
+    text-align:center;
+    border:2px solid yellow;
+    border-radius:10px;
+    padding:10px;
+} 
+
+
+/* Element Selector */
+    h1, h2, h3, p {
+    text-align:center;
+    border:2px solid yellow;
+    border-radius:10px;
+    padding:10px;
+}
+
+/*
+    Summary:
+    This is a practice file for 1st.
+*/
+

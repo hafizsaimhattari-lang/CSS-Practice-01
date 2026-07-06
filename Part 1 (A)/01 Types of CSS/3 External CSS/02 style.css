@@ -1,0 +1,28 @@
+﻿/*
+    PART 1 (A) - CSS Basic
+    Topic: 3 External CSS
+    Objective: Practice exercises for 3 External CSS
+*/
+/* Yeh alag CSS file hai. Yahan koi HTML tag (<style>) nahi aata! */
+
+body {
+    background-color: #222222; /* Dark Theme */
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    border: 2px solid white;
+    padding: 10px;
+}
+
+p {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+}
+/*
+    Summary:
+    This is a practice file for 3 External CSS.
+*/
+

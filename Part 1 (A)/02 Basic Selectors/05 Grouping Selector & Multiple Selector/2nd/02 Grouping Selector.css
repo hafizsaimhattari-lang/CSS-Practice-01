@@ -1,0 +1,25 @@
+﻿/*
+    PART 1 (A) - CSS Basic
+    Topic: 2nd
+    Objective: Practice exercises for 2nd
+*/
+*{
+    text-align:center;
+    color:white;
+}
+
+p, h1, h2, p {
+    text-align:center;
+    border:2px solid red;
+    border-radius:10px;
+    padding:10px;
+}
+
+body{
+    background-color:black;
+}
+/*
+    Summary:
+    This is a practice file for 2nd.
+*/
+

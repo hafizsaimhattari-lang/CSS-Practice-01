@@ -1,0 +1,33 @@
+﻿/*
+    PART 1 (A) - CSS Basic
+    Topic: 03 Id Selector
+    Objective: Practice exercises for 03 Id Selector
+*/
+/* 
+ * ENGLISH: The ID Selector always starts with a Hash (#) symbol. 
+ * We use it to target the one specific element that has this ID.
+ * 
+ * ROMAN URDU: ID Selector hamesha Hash (#) ke nishan se shuru hota hai. 
+ * Hum isay sirf us ek makhsoos cheez ko pakarne ke liye use karte hain jis par yeh ID lagi ho.
+ */
+
+#special-box {
+    
+    /* ENGLISH: Changes the text color to white */
+    /* ROMAN URDU: Text ka rang safaid (white) kar dega */
+    color: white; 
+
+    /* ENGLISH: Changes the background color of the specific box to red */
+    /* ROMAN URDU: Us makhsoos dabbe ke background ka rang laal (red) kar dega */
+    background-color: red; 
+
+    /* ENGLISH: Brings the text to the center of the screen */
+    /* ROMAN URDU: Text ko screen ke bilkul center mein le aayega */
+    text-align: center; 
+
+}
+/*
+    Summary:
+    This is a practice file for 03 Id Selector.
+*/
+

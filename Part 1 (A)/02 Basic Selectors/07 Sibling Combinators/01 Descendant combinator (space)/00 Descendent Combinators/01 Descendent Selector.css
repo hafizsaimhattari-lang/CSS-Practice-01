@@ -1,0 +1,63 @@
+﻿/*
+    PART 1 (A) - CSS Basic
+    Topic: 00 Descendent Combinators
+    Objective: Practice exercises for 00 Descendent Combinators
+*/
+ /* * =========================================================
+ * ðŸŽ¯ THE DESCENDANT SELECTOR (Space / Khali Jagah)
+ * =========================================================
+ * ENGLISH DEFINITION:
+ * The Descendant Selector is used to target an element that 
+ * is INSIDE another specific element. We write it by putting 
+ * a "Space" between two selectors (e.g., .vip-box p).
+ 
+    ROMAN URDU DEFINITION:
+    Descendant Selector wahan use hota hai jab humne kisi 
+    'Khaas Dabbe' ke ANDAR wale tag ko target karna ho. 
+    Isay likhne ke liye hum do selectors ke darmiyan sirf 
+    ek Space (Khali Jagah) chorte hain. Baqi page par iska 
+    koi asar nahi hota.
+    =========================================================
+ */
+
+ /*
+ 
+    NOTE: ager ham nay sirf div p likha tu iska matlab hai ke page par jitnay bhi p tag hain wo sab target ho or ager ham nay sirf div h1 likha tu iska matlab hai ke page par jitnay bhi h1 tag hain wo sab target ho. Lekin agar ham nay div p, div h1 likha tu iska matlab hai ke page par jitnay bhi p tag hain wo target ho or jitnay bhi h1 tag hain wo target ho. ham mukhtailif tag ko aik sath target karna chahte hain tu ham is tarah likh sakte hain.
+    
+ */
+
+ /*
+ 
+    div p, div h1 {
+    border:2px solid black;
+    border-radius:10px;
+    margin:10px;
+    padding:10px;
+ }
+
+ */
+
+ div p {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    text-align:center;
+}
+
+div h1{
+    color: blue;
+    font-size: 30px;
+    font-weight: bold;
+    text-align:center;
+}
+
+/* 
+
+isi tarah class or id kay zariyya bhi ho sakta hai. Jaise ke agar hum chahen ke sirf .vip-box class kay andar wale p tag ko target karna hai to hum likhenge: .vip-box p { ... } tu us ka ho jay ga. Agar hum chahen ke sirf #vip-box id kay andar wale p tag ko target karna hai to hum likhenge: #vip-box p { ... } tu us ka ho jay ga. 
+
+*/
+/*
+    Summary:
+    This is a practice file for 00 Descendent Combinators.
+*/
+

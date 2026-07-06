@@ -1,0 +1,55 @@
+﻿/*
+    PART 1 (A) - CSS Basic
+    Topic: 03 Next sibling combinator (+)
+    Objective: Practice exercises for 03 Next sibling combinator (+)
+*/
+body {
+    background-color: black;
+}
+
+* {
+    color: white;
+}
+
+div + h1 {
+    text-align:center;
+    border:2px solid white;
+    padding:10px;
+}
+
+h1 + p{
+
+    color:yellow;
+    text-align:center;
+    text-decoration: underline;
+
+}
+
+div + .main-heading {
+    text-align:center;
+    border:2px solid white;
+    padding:10px;
+}
+
+
+
+
+div ul li, div ol li {
+    text-align:center;
+    border:1px solid white;
+    padding:10px;
+    border-collapse: collapse;
+    color:skyblue;
+}
+
+br + button {
+
+    background-color:black;
+    color:white;
+    border:2px solid white;
+}
+/*
+    Summary:
+    This is a practice file for 03 Next sibling combinator (+).
+*/
+

@@ -1,0 +1,50 @@
+﻿/*
+    PART 1 (A) - CSS Basic
+    Topic: 00 Descendent Combinators (2)
+    Objective: Practice exercises for 00 Descendent Combinators (2)
+*/
+body {
+    background-color: #000000;
+}
+ 
+* {
+    color: white;
+}
+
+
+/* use element selector to target all the p and h1 tag inside the div tag. */
+
+div p {
+
+    text-align:center;
+    border:1px solid white;
+    padding:10px;
+}
+
+div h1 {
+    text-align:center;
+    border:1px solid white;
+    padding:10px;
+}
+
+/* use class selector to target all the p tag inside the div tag. */
+
+
+div .paragraph {
+    text-align:center;
+    border:1px solid yellow;
+    padding:10px;
+}
+
+/* use id selector to target all the h1 tag inside the div tag. */
+
+div #main-heading {
+    text-align:center;
+    border:1px solid yellow;
+    padding:10px;
+}
+/*
+    Summary:
+    This is a practice file for 00 Descendent Combinators (2).
+*/
+

@@ -1,0 +1,25 @@
+﻿/*
+    PART 1 (A) - CSS Basic
+    Topic: 04 Univercal Selector
+    Objective: Practice exercises for 04 Univercal Selector
+*/
+        
+        
+/*  Sirf ek Selector: UNIVERSAL (*) 
+    Iska order hai: "Page par jo kuch bhi hai, sab ko pakar lo!"
+ */
+
+* {
+    text-align:center;
+    color:white;
+    background-color:black;
+    border:2px solid white;
+    border-radius:10px;
+    padding:10px;
+    text-decoration:underline;
+}
+/*
+    Summary:
+    This is a practice file for 04 Univercal Selector.
+*/
+

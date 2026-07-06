@@ -1,0 +1,50 @@
+﻿/*
+    PART 1 (A) - CSS Basic
+    Topic: 01 Class Selector Practice
+    Objective: Practice exercises for 01 Class Selector Practice
+*/
+ /* English : 
+  CSS CLASS SELECTOR (.)
+  ---------------------------------------------------------
+  Usage Rule: We use a Class selector when we need to apply 
+  the exact same design/styling to multiple, different HTML 
+  elements across the webpage. It promotes code reusability.
+  ---------------------------------------------------------
+  */
+
+  /* Roman Urdu Comment :
+    CSS CLASS SELECTOR (.)
+  ---------------------------------------------------------
+  Asool: Class wahan lagti hai jahan humne EK JAISA design 
+  boht sari alag alag cheezon ko dena ho. Yeh hamara waqt aur 
+  code dono bachata hai. Market mein 99% yahi use hota hai!
+  Isko CSS mein dhoondne ke liye DOT (.) lagate hain.
+  ---------------------------------------------------------
+ */ 
+
+ body{
+    background-color:black;
+ }
+
+.heading-highlight {
+    color: white;
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px;
+    text-align:center;
+}
+
+.paragraph-highlight {
+
+    color: white;
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px;
+    text-align:center;
+
+}
+/*
+    Summary:
+    This is a practice file for 01 Class Selector Practice.
+*/
+
