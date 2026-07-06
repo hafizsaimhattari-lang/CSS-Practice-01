@@ -56,6 +56,46 @@
 
 ---
 
+## Specificity
+
+ID selector class aur element selector se zyada specific hota hai.
+
+```css
+h1 { color: blue; }
+.title { color: green; }
+#main-title { color: red; }
+```
+
+Agar ek `h1` par `.title` class aur `#main-title` ID dono hon to normal declarations mein ID wala red color jeetega. Isi wajah se styling mein bohat zyada IDs overrides ko mushkil bana sakti hain.
+
+---
+
+## ID Ke Doosre Uses
+
+```html
+<a href="#contact">Contact par jao</a>
+<section id="contact">...</section>
+
+<label for="email">Email</label>
+<input id="email" type="email">
+```
+
+- URL fragment `#contact` unique ID wale section tak jump kar sakta hai.
+- `<label for="email">` input ki `id="email"` se connect hota hai.
+- JavaScript `document.getElementById("email")` se element le sakta hai.
+
+---
+
+## Common Mistakes
+
+- Ek document mein same ID repeat karna.
+- HTML mein `id="#title"` likhna; hash sirf selector/URL reference mein lagta hai.
+- CSS mein `#` bhoolna.
+- Har styling rule ko ID se likh kar specificity unnecessarily barhana.
+
+---
+
 ## Professional Advice
 - Styling ke liye: Class use karo
-- JavaScript targets ke liye: ID use karo
+- Unique anchors, labels ya JavaScript hooks ke liye ID useful hai
+- ID name meaningful aur document mein unique rakho

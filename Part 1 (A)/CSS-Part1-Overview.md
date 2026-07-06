@@ -11,7 +11,7 @@ CSS (Cascading Style Sheets) woh tool hai jis se hum apne HTML pages ko khubsoor
 Part 1 (A)/
 ├── 00 CSS Basic intro/         → CSS kya hoti hai, syntax kya hai
 ├── 01 Types of CSS/            → Inline, Internal, External CSS ka farq
-├── 02 Basic Selectors/         → 7 qisam ke selectors ki practice
+├── 02 Basic Selectors/         → Selectors, combinators aur pseudo-classes
 └── CSS-Part1-Overview.md       → Yeh file
 ```
 
@@ -40,7 +40,9 @@ Part 1 (A)/
 | Universal | `*` | Sab kuch select |
 | Grouping | `h1, p, div` | Kai selectors ek sath |
 | Descendant | `div p` | Andar wala element |
-| Sibling | `+` / `~` / `>` | Bhai-bhan elements |
+| Child combinator | `>` | Direct child |
+| Sibling combinators | `+` / `~` | Foran agla ya baad ke siblings |
+| Pseudo class | `:hover`, `:active` | Element ki state |
 
 ---
 
@@ -49,6 +51,30 @@ Part 1 (A)/
 - **Class** selector sabse zyada use hota hai
 - **ID** unique hoti hai — ek page pe ek hi baar
 - `*` reset ke liye use karo
+- Combinator do selectors ka HTML relationship batata hai
+- Pseudo class state ko target karti hai; naya HTML element nahi banati
+
+---
+
+## Basic CSS Rule Ko Parhna
+
+```css
+.card > p:hover {
+    color: blue;
+}
+```
+
+- `.card` class wala parent
+- `>` direct child relation
+- `p` target element
+- `:hover` mouse wali state
+- `color` property aur `blue` uski value
+
+---
+
+## Agla Practical Qadam
+
+Ab selectors ko layout aur visual properties ke sath practice karein: box model, colors, typography, display, Flexbox aur Grid. Har example mein browser DevTools se dekhein ke kaunsa rule apply ya override ho raha hai.
 
 ---
 

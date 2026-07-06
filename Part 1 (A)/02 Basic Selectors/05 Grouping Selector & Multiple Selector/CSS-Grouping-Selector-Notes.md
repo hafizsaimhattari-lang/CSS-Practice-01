@@ -66,7 +66,46 @@ h3,
 
 ---
 
+## Har Selector Independent Hota Hai
+
+```css
+.card h2,
+.card p,
+#footer a {
+    color: navy;
+}
+```
+
+Comma ke baad relationship reset ho jata hai, is liye har item complete selector hai.
+
+```css
+/* Yeh .card ke h2 aur page ke tamam p select karta hai */
+.card h2, p { color: navy; }
+
+/* Agar dono .card ke andar chahiye hon */
+.card h2, .card p { color: navy; }
+```
+
+---
+
+## Grouping Specificity Ko Merge Nahi Karti
+
+Grouped list mein har selector apni specificity rakhta hai. `.note, #hero` likhne se `.note` ko ID ki power nahi milti.
+
+---
+
+## Common Mistakes
+
+- Comma bhool kar grouping ko descendant selector bana dena.
+- Comma ke baad parent context dobara na likhna.
+- Same selector ko list mein repeat karna.
+- Bilkul unrelated components ko sirf ek shared property ki wajah se bohat badi list mein bandh dena.
+
+---
+
 ## Yaad Rakho
 ```
 Grouping = Code kam, kaam zyada (DRY Principle)
 ```
+
+Grouping sirf selectors share karti hai; declaration block sab matches par same apply hota hai.

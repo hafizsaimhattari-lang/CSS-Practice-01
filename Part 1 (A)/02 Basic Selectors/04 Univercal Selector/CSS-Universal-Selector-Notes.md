@@ -66,3 +66,44 @@ Browser ki default margin/padding hatane ke liye use karte hain.
 ## Savdhaani
 - Bahut powerful hai - har cheez pakad leta hai
 - Mostly sirf CSS reset ke liye use karo
+- `*` elements select karta hai, pseudo-elements `::before` aur `::after` ko automatically include nahi karta
+
+```css
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+```
+
+Yeh common reset elements ke sath generated pseudo-elements ko bhi include karta hai.
+
+---
+
+## Universal Selector Ko Scope Karna
+
+```css
+.card * {
+    font-family: Arial, sans-serif;
+}
+```
+
+Yeh poore page ki bajaye `.card` ke andar har descendant element select karta hai.
+
+---
+
+## Inheritance Se Farq
+
+```css
+body { color: white; }
+```
+
+`color` aksar children ko inherit hoti hai. Is ka matlab yeh nahi ke `body` selector ne har child ko direct select kiya. `* { color: white; }` har element par direct declaration lagata hai, jo later inheritance/overrides par different asar daal sakti hai.
+
+---
+
+## Common Mistakes Aur Summary
+
+- `*` se margin, padding, border aur background sab par lagana unexpected layout bana sakta hai.
+- Universal selector ki specificity zero hoti hai; class/ID rules aasani se override karte hain.
+- Focused reset ke liye use karein, har visual property globally lagane ke liye nahi.

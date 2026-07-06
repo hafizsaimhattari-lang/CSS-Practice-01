@@ -90,9 +90,44 @@ p {
     font-size: 24px;
 }
 ```
-✅ **Yahi tareeqa use karo** — HTML aur CSS bilkul alag, saaf aur reusable.
+✅ **Reusable website styling ke liye preferred** — HTML aur CSS alag, saaf aur reusable.
+
+---
+
+## Agar Teeno Sath Hon To?
+
+```html
+<link rel="stylesheet" href="style.css">
+<style>
+    .note { color: blue; }
+</style>
+<p class="note" style="color: red;">Text</p>
+```
+
+Normal declarations mein inline style aksar class-based internal/external rule se jeetegi. Internal aur External ke darmiyan importance, specificity aur source order decide karte hain.
+
+---
+
+## Konsa Tareeqa Kab?
+
+| Situation | Behtar Choice |
+|-----------|---------------|
+| Ek quick one-off test | Inline |
+| Single HTML demo ya page-specific rules | Internal |
+| Multi-page site aur reusable components | External |
+| HTML email ki special compatibility | Kabhi kabhi Inline |
+
+---
+
+## Common Mistakes
+
+- Inline CSS mein selector/braces likhna.
+- Internal CSS ka `<style>` tag close na karna.
+- External CSS ka path ya `rel="stylesheet"` galat dena.
+- Cascade ko samjhe baghair `!important` lagate jana.
 
 ---
 
 ## 📝 Akhiri Baat
-Real-world mein hamesha **External CSS** use karo. Inline aur Internal sirf debugging ya quick testing ke liye.
+
+Normal websites mein External CSS default choice hai. Inline aur Internal bhi valid tools hain; choice scope, reuse aur project ki requirement dekh kar karein.

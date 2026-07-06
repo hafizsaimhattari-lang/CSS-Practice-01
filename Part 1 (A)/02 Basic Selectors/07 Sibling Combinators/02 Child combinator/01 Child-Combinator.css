@@ -1,0 +1,40 @@
+/*
+    PART 1 (A) - CSS Basic
+    Topic: Child Combinator (>)
+    Objective: Parent ke direct child ko select karna
+*/
+body {
+    background-color: black;
+}
+
+* {
+    color: white;
+}
+
+header > h1 {
+    color: red;
+    text-align: center;
+    border: 2px solid white;
+    padding: 10px;
+}
+
+.parent-box > h2 {
+    color: yellow;
+    text-align: center;
+}
+
+.parent-box > p {
+    color: skyblue;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.family-list > li {
+    color: chartreuse;
+    padding: 5px;
+}
+
+/*
+    .nested-box ke andar wala p, .parent-box ka direct child nahi hai.
+    Is liye .parent-box > p us par apply nahi hoga.
+*/

@@ -7,9 +7,9 @@ Jab do ya zyada elements ek hi parent ke andar hon to unhe Sibling (bhai-bhan) k
 
 ```html
 <div>
-    <h1>Heading</h1>   <- Sibling
-    <p>Para 1</p>      <- Sibling
-    <p>Para 2</p>      <- Sibling
+    <h1>Heading</h1> <!-- Sibling -->
+    <p>Para 1</p>    <!-- Sibling -->
+    <p>Para 2</p>    <!-- Sibling -->
 </div>
 ```
 
@@ -70,12 +70,34 @@ h1 ~ p { color: orange; }
 
 ## Quick Reference
 
-| Symbol | Naam | Matlab |
-|--------|------|--------|
-| space | Descendant | Andar koi bhi matching descendant |
-| `>` | Child | Seedha bacha sirf |
-| `+` | Adjacent Sibling | Agla ek bhai |
-| `~` | Subsequent Sibling | Baad ke tamam matching siblings |
+| Symbol | Relation | Adjacency | Matches |
+|--------|----------|-----------|---------|
+| space | Ancestor → descendant | Direct hona zaroori nahi | Andar ke tamam matches |
+| `>` | Parent → child | Direct hona zaroori | Direct children |
+| `+` | Sibling → sibling | Bilkul foran | Zyada se zyada ek |
+| `~` | Sibling → sibling | Beech mein elements ho sakte hain | Baad ke tamam matches |
+
+---
+
+## Same HTML Par Charon Ka Asar
+
+```html
+<section>
+    <h2>Heading</h2>
+    <p>Direct paragraph 1</p>
+    <div><p>Nested paragraph</p></div>
+    <p>Direct paragraph 2</p>
+</section>
+```
+
+```css
+section p   { } /* Teenon p */
+section > p { } /* Dono direct p */
+h2 + p      { } /* Sirf direct paragraph 1 */
+h2 ~ p      { } /* Dono direct paragraph siblings */
+```
+
+`h2 ~ p` nested paragraph ko select nahi karta, kyun ke uska parent `div` hai.
 
 ---
 
@@ -87,3 +109,18 @@ label + input { margin-left: 10px; }
 h2 ~ p { color: #555; }
 nav > a { font-weight: bold; }
 ```
+
+---
+
+## Common Mistakes
+
+- Descendant aur child combinators ko sibling combinators na samjhein.
+- `+` aur `~` mein dono matched elements ka parent same hota hai.
+- `A + B` aur `A ~ B` sirf `A` ke baad ke elements dekhte hain.
+- Selector ki right side wala element hi style hota hai; left side context deta hai.
+
+---
+
+## Summary
+
+Combinator do selectors ke darmiyan HTML relationship batata hai: andar, direct child, foran agla sibling, ya baad ke siblings. Sahi combinator se selector precise aur predictable rehta hai.

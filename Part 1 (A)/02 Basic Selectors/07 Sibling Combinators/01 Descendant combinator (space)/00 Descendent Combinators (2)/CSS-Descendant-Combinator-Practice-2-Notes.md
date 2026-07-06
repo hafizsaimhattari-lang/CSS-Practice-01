@@ -1,5 +1,47 @@
 # Descendant Combinator - Practice 2
 
-Descendant combinator ki doosri practice.
+Is practice mein descendant combinator ko element, class aur ID selector ke sath use kiya gaya hai.
 
-**Seekha:** Alag HTML structures mein descendant combinator apply karna.
+## Files
+
+| File | Kaam |
+|------|------|
+| `02 Descendent Selector.html` | ID wali heading aur class wala paragraph |
+| `02 Descendent Selector.css` | Chaar descendant selector examples |
+
+## HTML Structure
+
+```html
+<div>
+    <h1 id="main-heading">Descendant Selector Test</h1>
+    <p class="paragraph">Paragraph inside div...</p>
+</div>
+```
+
+## Practice Selectors
+
+```css
+div p { border: 1px solid white; }
+div h1 { border: 1px solid white; }
+div .paragraph { border: 1px solid yellow; }
+div #main-heading { border: 1px solid yellow; }
+```
+
+### Har Rule Ka Matlab
+
+| Selector | Target |
+|----------|--------|
+| `div p` | `div` ke andar har `p` |
+| `div h1` | `div` ke andar har `h1` |
+| `div .paragraph` | `div` ke andar `.paragraph` class |
+| `div #main-heading` | `div` ke andar `#main-heading` ID |
+
+## Specificity Ka Asar
+
+Ek hi paragraph `div p` aur `div .paragraph` dono ko match karta hai. Class wala selector zyada specific hai, is liye uski yellow border jeetti hai. ID wale heading rule mein bhi yahi principle apply hota hai.
+
+## Seekha Kya?
+
+- Space combinator tag, class aur ID sab ke sath kaam karta hai.
+- Ek element multiple selectors se match ho sakta hai.
+- Specificity conflicting property ka winner decide karti hai.

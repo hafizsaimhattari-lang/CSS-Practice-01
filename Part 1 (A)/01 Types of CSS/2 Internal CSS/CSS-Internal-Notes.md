@@ -60,7 +60,7 @@ Internal mein ek jagah se poore page ke elements style hote hain — yeh inline 
 - Sirf usi ek HTML file pe kaam karti hai
 - 10 pages hoon toh 10 files mein alag likhni padti hai
 - HTML file bhari ho jati hai
-- Professional use ke liye nahi
+- Shared styles cache/reuse nahi hote jaise external file mein hote hain
 
 ---
 
@@ -68,4 +68,44 @@ Internal mein ek jagah se poore page ke elements style hote hain — yeh inline 
 Sirf tab jab:
 - Testing ya demo banana ho
 - Ek hi page ka project ho
-- External CSS possible na ho (rare case)
+- Page-specific critical ya generated styling ho
+
+---
+
+## Placement Aur Scope
+
+```html
+<head>
+    <style>
+        .notice { color: red; }
+    </style>
+</head>
+```
+
+`<style>` aam tor par `<head>` mein rakha jata hai. Is block ke selectors poore current document ko target kar sakte hain, sirf neeche wale element ko nahi.
+
+## Internal Aur External Dono Sath
+
+```html
+<link rel="stylesheet" href="style.css">
+<style>
+    p { color: green; }
+</style>
+```
+
+Agar importance aur specificity same ho to baad mein aane wala rule jeetta hai. Is example mein internal rule link ke baad hai, is liye same `p` property par internal value jeet sakti hai.
+
+---
+
+## Common Mistakes
+
+- `<style>` ko galti se `<body>` ke content mein rakhna.
+- CSS declarations ko HTML attributes ki tarah likhna.
+- Closing `</style>` tag bhoolna.
+- Har page mein same internal CSS copy karna; shared CSS ke liye external file behtar hai.
+
+---
+
+## Summary
+
+Internal CSS current HTML document ke `<style>` block mein hoti hai. Single-page demo ya page-specific rules ke liye useful hai, lekin multi-page reuse ke liye External CSS zyada maintainable hoti hai.

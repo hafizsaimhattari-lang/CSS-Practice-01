@@ -1,0 +1,41 @@
+<!--
+    PART 1 (A) - CSS Basic
+    Topic: Child Combinator (>)
+    Objective: Parent ke direct child ko select karna
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Combinator Practice</title>
+    <link rel="stylesheet" href="01 Child-Combinator.css">
+</head>
+<body>
+    <header>
+        <h1>Child Combinator Test</h1>
+    </header>
+
+    <main>
+        <section class="parent-box">
+            <h2>Direct Child Heading</h2>
+            <p>Yeh paragraph parent-box ka direct child hai.</p>
+
+            <div class="nested-box">
+                <p>Yeh paragraph nested hai, direct child nahi.</p>
+            </div>
+        </section>
+
+        <ul class="family-list">
+            <li>Father</li>
+            <li>Mother</li>
+            <li>Child</li>
+        </ul>
+    </main>
+
+<!--
+    Summary:
+    > sirf parent ke direct child ko select karta hai.
+-->
+</body>
+</html>

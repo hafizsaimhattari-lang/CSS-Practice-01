@@ -1,10 +1,78 @@
-"Sibling" ka angrezi mein matlab hota hai Bhai ya Behan! 👨‍👩‍👧‍👦
-HTML ki dunya mein wo tags jo ek hi dabbe (Parent) ke andar ek sath, aage peeche rakhe hote hain, wo apas mein "Siblings" hote hain!
+# HTML Mein Sibling Kya Hota Hai?
 
-1. Adjacent Sibling Combinator (+) - Fauran Agla Bhai! ➡️
-Agar tum chahte ho ke sirf us Paragraph ko design do jo kisi Heading ke BILKUL FAURAN BAAD aa raha hai, toh hum Plus (+) lagate hain! ➕🎯
-Misaal: Tumhari class mein tumhare bilkul sath wali kursi par jo larka baitha hai, sirf usay pakro! baqi sab ko chhor do. 🪑👦
+English mein sibling ka matlab bhai ya behan hota hai. HTML mein woh elements siblings hote hain jin ka **immediate parent same** ho.
 
-2. General Sibling Combinator (~) - Baqi Saare Chote Bhai! 🌊
-Agar tum chahte ho ke ek Heading ke baad aane wale SAARE Paragraphs ko design mil jaye, toh hum Tilde (~) lagate hain! 〰️🎯
-Misaal: Tumhari class mein tumhare baad aane wale saare larkon ko pakar lo! 👦👦👦
+```html
+<main>
+    <h1>Heading</h1>
+    <p>Paragraph</p>
+    <div>Box</div>
+</main>
+```
+
+Yahan `h1`, `p` aur `div` siblings hain, kyun ke teeno ka parent `main` hai.
+
+---
+
+## Kaun Sibling Nahi Hai?
+
+```html
+<main>
+    <section>
+        <p>Nested paragraph</p>
+    </section>
+    <h2>Heading</h2>
+</main>
+```
+
+`section` aur `h2` siblings hain. Lekin nested `p`, `h2` ka sibling nahi, kyun ke `p` ka parent `section` aur `h2` ka parent `main` hai.
+
+---
+
+## Adjacent Sibling (`+`)
+
+`+` sirf foran agla matching sibling select karta hai.
+
+```css
+h1 + p {
+    color: green;
+}
+```
+
+Isay yun parhein: **h1 ke bilkul baad wala p**.
+
+```html
+<h1>Heading</h1>
+<p>Select hoga</p>
+<p>Select nahi hoga</p>
+```
+
+---
+
+## Subsequent Sibling (`~`)
+
+`~` pehle element ke baad aane wale tamam matching siblings select karta hai. Beech mein doosre elements ho sakte hain.
+
+```css
+h1 ~ p {
+    color: orange;
+}
+```
+
+```html
+<h1>Heading</h1>
+<p>Select hoga</p>
+<span>Beech ka element</span>
+<p>Yeh bhi select hoga</p>
+```
+
+---
+
+## Jaldi Yaad Rakho
+
+| Symbol | Matlab |
+|--------|--------|
+| `A + B` | `A` ke foran baad wala ek `B` |
+| `A ~ B` | `A` ke baad ke tamam matching `B` siblings |
+
+Dono selectors sirf forward direction mein dekhte hain aur matched elements ka parent same hona chahiye.

@@ -45,17 +45,66 @@ Yeh CSS code page ke sare `<h1>` tags ko neele rang ka, 32px bada, aur center me
 
 ## 🌊 "Cascading" Ka Matlab
 
-CSS mein "C" ka matlab **Cascading** hai — yani agar kisi element ko kai jagah se style mile, toh ek khas tarteeq ke mutabiq ek jeete ga:
-1. `!important` (sabse powerful)
-2. Inline CSS
-3. ID selector
-4. Class selector
-5. Element selector
-6. Browser default (sabse kamzor)
+CSS mein "C" ka matlab **Cascading** hai. Agar ek element ki same property ko kai declarations milen to browser importance/origin, cascade layer, specificity, scope aur source order se winner decide karta hai.
+
+Beginner level par normal author CSS ko yun yaad rakhein:
+
+```text
+Inline style > ID > Class / pseudo-class > Element
+```
+
+Same specificity ho to CSS mein baad mein likha rule jeetta hai. `!important` normal declarations se alag priority rakhta hai, is liye ise routine code mein avoid karna behtar hai.
+
+```css
+p { color: blue; }
+.note { color: green; } /* Class zyada specific: green apply hoga */
+```
+
+---
+
+## CSS HTML Se Kaise Connect Hoti Hai?
+
+```html
+<!-- Inline -->
+<p style="color: red;">Text</p>
+
+<!-- Internal -->
+<style>p { color: red; }</style>
+
+<!-- External -->
+<link rel="stylesheet" href="style.css">
+```
+
+Real projects mein reusable styling ke liye External CSS aam tor par preferred hoti hai.
 
 ---
 
 ## 💡 Notes
 - CSS comments `/* yahan likho */` se likhte hain
-- Har property ke aakhir mein `;` (semicolon) zaroori hai
-- CSS **case-insensitive** hai lekin lowercase likhna best practice hai
+- Declaration ke baad `;` lagana safe aur consistent practice hai
+- Property names aam tor par case-insensitive hain, lekin class/ID names aur custom properties ko case-sensitive samjhein
+- Invalid property ya value ko browser aam tor par ignore kar deta hai
+- Browser DevTools ke Styles panel se applied aur overridden rules dekhe ja sakte hain
+
+---
+
+## Common Beginner Mistakes
+
+```css
+/* Colon missing */
+color red;
+
+/* Closing brace missing */
+p { color: red;
+```
+
+- Selector ke baad `{ }` bhoolna
+- Property aur value ke darmiyan `:` na lagana
+- CSS file ka galat path dena
+- Class ke liye `.` aur ID ke liye `#` bhoolna
+
+---
+
+## Summary
+
+CSS rule selector aur declaration block se milta hai. Selector target batata hai; property batati hai kya badalna hai; value batati hai kaise badalna hai.

@@ -60,6 +60,36 @@ p {
 | `rel="stylesheet"` | Batata hai ke yeh CSS file hai |
 | `href="..."` | CSS file ka raasta (path) |
 
+`<link>` void element hai, is liye iska closing `</link>` tag nahi hota. Isay aam tor par document ke `<head>` mein rakhte hain.
+
+---
+
+## File Path Samajhna
+
+```html
+<!-- HTML aur CSS same folder mein -->
+<link rel="stylesheet" href="style.css">
+
+<!-- CSS, css naam ke child folder mein -->
+<link rel="stylesheet" href="css/style.css">
+
+<!-- CSS parent folder mein -->
+<link rel="stylesheet" href="../style.css">
+```
+
+Path current HTML file ki location se resolve hota hai. File name, spaces aur letter casing ko exact rakhna safe hai.
+
+---
+
+## Multiple Stylesheets Aur Order
+
+```html
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="components.css">
+```
+
+Same importance aur specificity par baad mein loaded stylesheet ka rule jeetta hai. Is liye files ka order cascade ka hissa hai.
+
 ---
 
 ## Fayde
@@ -70,3 +100,19 @@ p {
 
 ## Nuqsan
 - Ek extra file manage karni padti hai (koi bari baat nahi)
+- Galat path ya failed network load ki surat mein styles apply nahi hoti
+
+---
+
+## Common Mistakes
+
+- `href` mein galat file name ya folder path.
+- `rel="stylesheet"` bhool jana.
+- HTML file ko CSS syntax ya CSS file ko `<style>` tags ke sath bhar dena.
+- Changes save na karna ya browser cache ki wajah se purana result dekhna.
+
+---
+
+## Summary
+
+External CSS HTML se styling ko alag rakhti hai. Ek stylesheet kai pages share kar sakte hain, browser usay cache kar sakta hai, aur project ko maintain karna asaan hota hai.

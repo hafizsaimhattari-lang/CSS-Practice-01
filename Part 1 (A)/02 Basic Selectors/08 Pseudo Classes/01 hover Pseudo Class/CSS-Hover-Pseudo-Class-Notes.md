@@ -138,3 +138,44 @@ br + p {
 .parent input:hover { }     /* Descendant + hover */
 .class + h1:hover { }       /* Sibling + hover */
 ```
+
+---
+
+## Transition Ke Sath Smooth Hover
+
+```css
+.btn {
+    background-color: blue;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: darkblue;
+}
+```
+
+`transition` normal state par likhne se hover enter aur leave dono smooth hote hain.
+
+---
+
+## Touch Aur Keyboard Ka Khayal
+
+- Touch devices par hover consistent nahi hoti.
+- Keyboard user ke liye matching `:focus-visible` style dein.
+- Sirf color par depend na karein; underline ya border bhi useful cue hai.
+
+```css
+a:hover,
+a:focus-visible {
+    color: chartreuse;
+    text-decoration: underline;
+}
+```
+
+---
+
+## Common Mistakes Aur Summary
+
+- `.btn :hover` aur `.btn:hover` alag hain; pehle selector mein space descendant ko target karti hai.
+- Hover rule normal state ko permanently change nahi karta.
+- `:hover` visual feedback ke liye acha hai, lekin click behavior JavaScript/HTML semantics se aata hai.

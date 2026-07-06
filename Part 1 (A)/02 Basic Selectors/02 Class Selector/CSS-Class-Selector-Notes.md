@@ -68,6 +68,28 @@ body { background-color: black; }
 <button class="btn primary large">Click</button>
 ```
 
+```css
+.btn { padding: 10px; }
+.primary { background-color: blue; }
+.large { font-size: 20px; }
+```
+
+Element ko teeno classes ke rules milenge. CSS mein `.btn.primary` bina space ke us element ko select karta hai jis par dono classes hon; `.btn .primary` space ke sath `.btn` ke andar descendant dhoondta hai.
+
+---
+
+## Class Naming Rules
+
+```html
+<p class="user-message">Valid name</p>
+```
+
+- `class` attribute mein multiple names spaces se alag hote hain.
+- CSS selector mein har class ke aage dot (`.`) lagta hai.
+- Meaningful names rakhein: `.error-message`, `.card-title`.
+- Class names case-sensitive match hote hain: `.Card` aur `.card` alag ho sakte hain.
+- Name mein space ek hi class ka hissa nahi ban sakti.
+
 ---
 
 ## Class vs ID
@@ -77,3 +99,18 @@ body { background-color: black; }
 | Ek page par | Kai elements | Sirf ek element |
 | CSS mein | `.className` | `#idName` |
 | Preferred | Styling ke liye | Uniqueness ke liye |
+
+---
+
+## Common Mistakes
+
+- HTML mein `class=".box"` likhna; dot sirf CSS mein hota hai.
+- CSS mein `.box` ki jagah `box` likh dena.
+- Class name ki spelling/casing mismatch.
+- Reusable design ke liye har element ko nayi class de dena, jab same class reuse ho sakti ho.
+
+---
+
+## Summary
+
+Class selector reusable styling ka bunyadi tool hai. `.class-name` ek ya kai elements select karta hai, aur ek element multiple classes rakh sakta hai.

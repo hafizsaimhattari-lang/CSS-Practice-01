@@ -45,6 +45,36 @@ h1 {
 - Koi `.` ya `#` nahi — sirf tag ka naam
 - Page ke SARE matching tags par apply hota hai
 - `p { color: red }` se page ke har `<p>` red hoga
+- HTML ke standard tag names lowercase likhna best practice hai
+
+---
+
+## Multiple Element Selectors
+
+```css
+h1 { font-size: 32px; }
+h2 { font-size: 24px; }
+p  { line-height: 1.6; }
+```
+
+Har rule apne matching tag ko target karta hai. Agar same declarations chahiye hon to grouping use karein:
+
+```css
+h1, h2, p { font-family: Arial, sans-serif; }
+```
+
+---
+
+## Specificity
+
+Element selector ki specificity class aur ID se kam hoti hai.
+
+```css
+p { color: blue; }
+.warning { color: red; }
+```
+
+`<p class="warning">` par class rule jeetega aur text red hoga.
 
 ---
 
@@ -57,3 +87,11 @@ p { color: red; }
 /* Behtar - sirf error class wale */
 .error { color: red; }
 ```
+
+---
+
+## Common Mistakes Aur Summary
+
+- `p.` ya `#p` element selector nahi hain.
+- Broad element rule component ke har matching tag par asar kar sakta hai.
+- Element selector basic/default styling ke liye acha hai; specific variants ke liye class use karein.

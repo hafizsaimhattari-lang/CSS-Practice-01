@@ -109,3 +109,41 @@ button:active { background-color: black; transform: scale(0.95); }
 - `:active` click ka momentary (sirf click ke waqt) style deta hai
 - `:hover` + `:active` combine karna button ko interactive feel deta hai
 - `border-radius` ke sath active state aur achi lagti hai
+
+---
+
+## `:active` Aur Selected State Mein Farq
+
+`:active` aam tor par pointer/button press ke duration tak rehti hai. Menu ka permanently selected item dikhane ke liye class ya relevant state use karein:
+
+```html
+<a class="current-page" href="/about">About</a>
+```
+
+```css
+.current-page { font-weight: bold; }
+```
+
+Checkbox ki persistent state ke liye `:checked` hoti hai, `:active` nahi.
+
+---
+
+## Keyboard Aur Focus
+
+Button activate karne ke baad keyboard focus reh sakta hai. Is liye active ke sath focus style bhi rakhein:
+
+```css
+button:focus-visible {
+    outline: 3px solid orange;
+    outline-offset: 2px;
+}
+```
+
+---
+
+## Common Mistakes Aur Summary
+
+- `:active` ko click ke baad permanently apply samajhna.
+- Press effect mein itna transform karna ke layout ya readability disturb ho.
+- Focus outline remove karke keyboard users ko current position se mehroom karna.
+- `:active` instant feedback deta hai; persistent application state ke liye class/attribute zyada munasib hai.

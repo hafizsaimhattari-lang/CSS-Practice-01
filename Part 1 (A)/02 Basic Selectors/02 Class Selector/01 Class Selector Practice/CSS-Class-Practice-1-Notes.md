@@ -26,4 +26,39 @@ body { background-color: black; }
 }
 ```
 
-**Seekha:** Ek hi class kai elements par apply ho sakti hai.
+---
+
+## Har Selector Ka Result
+
+| Selector | Target | Result |
+|----------|--------|--------|
+| `body` | Poora document body | Black background |
+| `.heading-highlight` | Class wali heading | White text, red box |
+| `.paragraph-highlight` | Dono class wale paragraphs | Same reusable styling |
+
+`paragraph-highlight` ek hi class name hai jo do `<p>` elements par reuse hua. Browser dono ko same declarations deta hai.
+
+---
+
+## Class Selector Ka Pattern
+
+```html
+<element class="class-name">Content</element>
+```
+
+```css
+.class-name {
+    property: value;
+}
+```
+
+HTML mein class ke sath dot nahi lagta; dot sirf CSS selector mein lagta hai.
+
+---
+
+## Seekha Kya?
+
+- Ek class kai elements par apply ho sakti hai.
+- Class name HTML aur CSS mein exact same hona chahiye.
+- External stylesheet `<link>` se connect hoti hai.
+- Similar styles ko reusable class banana repeated inline CSS se behtar hai.
