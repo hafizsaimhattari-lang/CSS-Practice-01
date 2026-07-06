@@ -1,0 +1,25 @@
+body {
+    background-color:black;
+}
+ label {
+    color:white;
+ }
+
+ input:hover {
+    background-color:yellow;
+    color:black;
+ }
+
+ input:active {
+    border:3px solid white;
+     background-color:blue;
+     color:white;
+ }
+
+ button:active {
+    background-color:blue;
+    color:white;
+    border:3px solid white;
+    border-radius:5px;
+ }
+
