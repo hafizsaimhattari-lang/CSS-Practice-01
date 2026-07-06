@@ -1,10 +1,23 @@
-﻿# 🏷️ 03 Next sibling combinator (+)
+# 🎯 03 Next Sibling Combinator (`+`)
 
-## 📚 Is Folder Ka Maqsad
-Yeh folder **03 Next sibling combinator (+)** ki practice ke liye hai.
+## 📖 Kya Hai?
+`+` combinator kisi element ke **turant agle ek sibling** ko select karta hai.
+
+```css
+h1 + p { color: green; }   /* h1 ke bilkul baad wala pehla p */
+```
+
+---
+
+## 📁 Files
+| File                                      | Description                          |
+|-------------------------------------------|--------------------------------------|
+| `01 Next sibling combinator (+).html`     | Pehli practice — adjacent sibling    |
+| `01 Next-sibling-combinator-(+).css`      | Uski CSS                             |
+| `02 Next sibling combinator (+).html`     | Doosri practice                      |
+| `02 Next-sibling-combinator-(+).css`      | Uski CSS                             |
 
 ---
 
 ## 📝 Summary
-Is folder mein mojud files 03 Next sibling combinator (+) ke concepts ko clear karne ke liye banayi gayi hain. Code ko check karein aur comments se samjhein.
-
+`+` combinator buttons, forms, aur list items ki styling mein bahut kaam aata hai.

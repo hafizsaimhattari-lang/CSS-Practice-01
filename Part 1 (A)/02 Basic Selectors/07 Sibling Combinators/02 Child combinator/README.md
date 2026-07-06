@@ -1,10 +1,14 @@
-﻿# 🏷️ 02 Child combinator
+# 🎯 02 Child Combinator (`>`)
 
-## 📚 Is Folder Ka Maqsad
-Yeh folder **02 Child combinator** ki practice ke liye hai.
+## 📖 Kya Hai?
+Child combinator `>` sirf parent ka **seedha bacha** select karta hai — deeper nested elements exclude hote hain.
 
----
+```css
+div > p { color: blue; }   /* Sirf div ka direct p, nesting mein nahi */
+```
+
+## 📁 Files
+Is folder mein practice files aana baki hain.
 
 ## 📝 Summary
-Is folder mein mojud files 02 Child combinator ke concepts ko clear karne ke liye banayi gayi hain. Code ko check karein aur comments se samjhein.
-
+`>` aur space mein farq — `>` sirf ek level andar daikhta hai, space poori nesting mein.

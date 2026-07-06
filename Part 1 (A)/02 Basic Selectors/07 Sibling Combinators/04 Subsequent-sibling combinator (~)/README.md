@@ -1,10 +1,24 @@
-﻿# 🏷️ 04 Subsequent-sibling combinator (~)
+# 🎯 04 Subsequent-Sibling Combinator (`~`)
 
-## 📚 Is Folder Ka Maqsad
-Yeh folder **04 Subsequent-sibling combinator (~)** ki practice ke liye hai.
+## 📖 Kya Hai?
+`~` combinator kisi element ke **baad ke sare siblings** ko select karta hai — sirf ek nahi, sab.
+
+```css
+h1 ~ p { color: orange; }   /* h1 ke baad wale har ek p ko */
+```
+
+### `+` aur `~` ka Farq:
+| Combinator | Kya Select Karta Hai                  |
+|------------|---------------------------------------|
+| `+`        | Agla sirf EK sibling                  |
+| `~`        | Baad ke SARE siblings                 |
+
+---
+
+## 📁 Files
+Is folder mein practice files aana baki hain.
 
 ---
 
 ## 📝 Summary
-Is folder mein mojud files 04 Subsequent-sibling combinator (~) ke concepts ko clear karne ke liye banayi gayi hain. Code ko check karein aur comments se samjhein.
-
+`~` tab use karo jab ek element ke baad ke sare siblings ko same style dena ho.

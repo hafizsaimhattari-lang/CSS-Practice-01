@@ -1,10 +1,16 @@
-﻿# 🏷️ 01 Descendant combinator (space)
+# 🎯 01 Descendant Combinator (Space)
 
-## 📚 Is Folder Ka Maqsad
-Yeh folder **01 Descendant combinator (space)** ki practice ke liye hai.
+## 📖 Kya Hai?
+Space ` ` combinator parent ke andar ke kisi bhi nested element ko select karta hai — direct ho ya deep nested.
+
+```css
+div p { color: red; }   /* div ke andar ke sare p */
+```
 
 ---
 
-## 📝 Summary
-Is folder mein mojud files 01 Descendant combinator (space) ke concepts ko clear karne ke liye banayi gayi hain. Code ko check karein aur comments se samjhein.
-
+## 📁 Sub-folders
+| Folder                    | Description                              |
+|---------------------------|------------------------------------------|
+| `00 Descendent Combinators`    | Pehli practice — basic nesting      |
+| `00 Descendent Combinators (2)`| Doosri practice — deeper nesting    |

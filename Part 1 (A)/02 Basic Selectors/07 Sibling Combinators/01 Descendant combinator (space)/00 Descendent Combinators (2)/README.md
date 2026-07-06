@@ -1,10 +1,10 @@
-﻿# 🏷️ 00 Descendent Combinators (2)
+# 🎯 00 Descendant Combinators — Practice 2
 
-## 📚 Is Folder Ka Maqsad
-Yeh folder **00 Descendent Combinators (2)** ki practice ke liye hai.
-
----
+## 📁 Files
+| File                          | Description                        |
+|-------------------------------|------------------------------------|
+| `02 Descendent Selector.html` | HTML deeper nested structure       |
+| `02 Descendent Selector.css`  | CSS with space combinator (deep)   |
 
 ## 📝 Summary
-Is folder mein mojud files 00 Descendent Combinators (2) ke concepts ko clear karne ke liye banayi gayi hain. Code ko check karein aur comments se samjhein.
-
+Deep nesting wala descendant combinator practice.
