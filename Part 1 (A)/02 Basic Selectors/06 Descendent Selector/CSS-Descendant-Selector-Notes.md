@@ -1,59 +1,66 @@
-# 🎯 06 Descendant Selector
+# CSS Descendant Selector - Mukammal Notes
 
-## 📚 Is Folder Ka Maqsad
-Yeh folder **Descendant Selector** ki practice ke liye hai.
-
----
-
-## 📖 Descendant Selector Kya Hai?
-Descendant selector kisi parent element ke **andar** wale specific child elements ko target karta hai. Iske liye dono selectors ke beech **space** rakha jata hai.
+## Descendant Selector Kya Hai?
+Parent element ke andar wale specific elements ko target karta hai. Dono selectors ke beech space rakha jata hai.
 
 ```css
-/* Syntax */
 parent child {
     property: value;
 }
 ```
+**Space = "Ke Andar"**
 
-### Example:
+---
+
+## Practice Files: `01 First/` aur `02 Second/`
+
+### Basic Example:
 ```html
 <div>
-    <p>Yeh div ke andar hai.</p>
+    <p>Yeh div ke ANDAR hai - style milegi.</p>
 </div>
-<p>Yeh div ke bahar hai.</p>
+<p>Yeh div ke BAHAR hai - style nahi milegi.</p>
 ```
 
 ```css
 div p {
-    color: red;   /* Sirf div ke ANDAR wala p red hoga */
+    color: red;  /* Sirf div ke andar wala p */
 }
 ```
 
 ---
 
-## 🔑 Key Points
-- Space ka matlab hai "andar ka element" (descendant).
-- Direct child ya deep-nested dono par kaam karta hai.
-- Zyada specific styling ke liye bahut useful hai.
+## Deep Nesting Bhi Kaam Karta Hai
 
-### Deep Nesting bhi kaam karta hai:
+```html
+<section>
+    <div>
+        <article>
+            <p>Yeh bhi mil jayega!</p>
+        </article>
+    </div>
+</section>
+```
+
 ```css
-.card .content p {
-    font-size: 14px;
-}
+section p { color: blue; }  /* Kisi bhi depth ka p */
 ```
 
 ---
 
-## 📁 Files
-| Folder      | File                          | Description                   |
-|-------------|-------------------------------|-------------------------------|
-| `01 First`  | `01 Descendent Selector.html` | Pehli practice                |
-| `01 First`  | `01 Descendent Selector.css`  | Uski CSS                      |
-| `02 Second` | `02 Descendent Selector.html` | Doosri practice               |
-| `02 Second` | `02 Descendent Selector.css`  | Uski CSS                      |
+## Real-World Use Cases
+
+```css
+nav a { color: white; text-decoration: none; }
+.card p { font-size: 14px; color: #555; }
+thead th { background-color: darkblue; color: white; }
+```
 
 ---
 
-## 📝 Summary
-Descendant selector real-world projects mein bahut zyada use hota hai — components ki nested styling ke liye.
+## Descendant vs Child Farq
+
+```css
+div p   { }  /* Sab andar wale p (kisi bhi depth) */
+div > p { }  /* Sirf seedha bacha p */
+```

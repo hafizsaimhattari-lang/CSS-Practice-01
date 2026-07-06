@@ -1,14 +1,19 @@
-# 🎯 05 Grouping Selector & Multiple Selector
+# CSS Grouping Selector - Mukammal Notes
 
-## 📚 Is Folder Ka Maqsad
-Yeh folder **Grouping Selector** ki practice ke liye hai.
+## Grouping Selector Kya Hai?
+Kai elements par ek jaisi CSS lagani ho to unhe comma (`,`) se group karke style karte hain. Code repeat nahi hota.
+
+```css
+selector1, selector2, selector3 {
+    property: value;
+}
+```
 
 ---
 
-## 📖 Grouping Selector Kya Hai?
-Jab kai elements par ek jaisi CSS lagani ho, to unhe ek sath group karke style kar sakte hain. Elements ke beech comma (`,`) dala jata hai.
+## Practice 1 (`1st/` folder) - Basic Grouping
 
-### Grouping ke bina (Repetition):
+### Grouping ke bina (repetition):
 ```css
 h1 { color: blue; font-family: Arial; }
 h2 { color: blue; font-family: Arial; }
@@ -16,7 +21,7 @@ h3 { color: blue; font-family: Arial; }
 p  { color: blue; font-family: Arial; }
 ```
 
-### Grouping ke sath (Clean Code):
+### Grouping ke sath (clean):
 ```css
 h1, h2, h3, p {
     color: blue;
@@ -26,8 +31,9 @@ h1, h2, h3, p {
 
 ---
 
-## 📌 Multiple Selectors
-Aap class, id, aur element selectors sab ko group kar sakte ho:
+## Practice 2 (`2nd/` folder) - Mixed Selectors
+
+Elements, classes aur IDs ek group mein:
 ```css
 h1, .intro, #hero {
     font-size: 24px;
@@ -37,13 +43,30 @@ h1, .intro, #hero {
 
 ---
 
-## 📁 Files
-| Folder  | Description                                      |
-|---------|--------------------------------------------------|
-| `1st`   | Pehli practice — basic grouping                  |
-| `2nd`   | Doosri practice — mixed selectors grouping        |
+## Multi-line Style (Zyada Readable)
+
+```css
+h1,
+h2,
+h3,
+.highlight {
+    font-family: Arial;
+    line-height: 1.5;
+}
+```
 
 ---
 
-## 📝 Summary
-Grouping selector code duplication rokta hai. Yeh clean aur DRY (Don't Repeat Yourself) code likhne ka tareeqa hai.
+## Kab Use Karein?
+| Situation | Use |
+|-----------|-----|
+| Kai tags ko ek jaisi font | Grouping |
+| Heading + paragraph ek rang | Grouping |
+| Kai classes ko reset karna | Grouping |
+
+---
+
+## Yaad Rakho
+```
+Grouping = Code kam, kaam zyada (DRY Principle)
+```

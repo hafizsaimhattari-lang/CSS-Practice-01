@@ -1,17 +1,11 @@
-# 🎯 02 Second — Descendant Selector Practice 2
+# Descendant Selector - Practice 2
 
-## 📚 Is Folder Ka Maqsad
-Descendant Selector ki **doosri practice** — complex nested structure.
+Descendant selector ki doosri practice.
 
----
+## Files
+| File | Kaam |
+|------|------|
+| `02 Descendent Selector.html` | HTML structure |
+| `02 Descendent Selector.css` | Aur gehri nesting ki practice |
 
-## 📁 Files
-| File                          | Description                         |
-|-------------------------------|-------------------------------------|
-| `02 Descendent Selector.html` | HTML — deep nested elements         |
-| `02 Descendent Selector.css`  | CSS — multiple descendant selectors |
-
----
-
-## 📝 Summary
-Is practice mein zyada complex structure ke saath descendant selector ka use dikha gaya hai.
+**Seekha:** Kai levels ki nesting mein bhi descendant selector kaam karta hai.

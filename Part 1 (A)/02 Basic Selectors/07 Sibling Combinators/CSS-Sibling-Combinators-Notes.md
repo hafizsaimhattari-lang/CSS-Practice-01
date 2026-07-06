@@ -1,70 +1,89 @@
-# 🎯 07 Sibling Combinators
+# CSS Combinators - Mukammal Notes
 
-## 📚 Is Folder Ka Maqsad
-Yeh folder **Sibling Combinators** ki practice ke liye hai — yeh selectors ek dusre ke "bhai-bhan" (sibling) elements ko target karte hain.
+> Is folder ka naam `Sibling Combinators` hai, lekin is mein do nesting combinators (` ` aur `>`) aur do sibling combinators (`+` aur `~`) cover kiye gaye hain.
 
----
-
-## 📖 Sibling Kya Hote Hain?
-Jab do ya zyada elements ek hi parent ke andar hon, to unhe sibling kehte hain.
+## Sibling Kya Hote Hain?
+Jab do ya zyada elements ek hi parent ke andar hon to unhe Sibling (bhai-bhan) kehte hain.
 
 ```html
 <div>
-    <h1>Heading</h1>   <!-- Sibling -->
-    <p>Para 1</p>      <!-- Sibling -->
-    <p>Para 2</p>      <!-- Sibling -->
-    <span>Text</span>  <!-- Sibling -->
+    <h1>Heading</h1>   <- Sibling
+    <p>Para 1</p>      <- Sibling
+    <p>Para 2</p>      <- Sibling
 </div>
 ```
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 
 ```
 07 Sibling Combinators/
-├── 01 Descendant combinator (space)/   (Space " " — nested element)
-├── 02 Child combinator/                (Arrow ">" — direct child sirf)
-├── 03 Next sibling combinator (+)/    (Plus "+" — agla ek sibling)
-├── 04 Subsequent-sibling combinator(~)/ (Tilde "~" — baad ke sare siblings)
-└── README.md                           (Yeh file)
+|-- 01 Descendant combinator (space)/
+|-- 02 Child combinator/
+|-- 03 Next sibling combinator (+)/
+|-- 04 Subsequent-sibling combinator (~)/
 ```
 
 ---
 
-## 🔑 Teeno Combinators Ka Farq
+## Char Relationship Combinators
 
-### 1. Descendant (Space ` `)
+### 1. Descendant Combinator (Space)
 ```css
-div p { color: red; }   /* div ke andar ke SARE p — direct ya nested */
+div p { color: red; }
+/* div ke ANDAR ke SARE p - chahe kitna andar ho */
 ```
 
-### 2. Child (`>`)
+### 2. Child Combinator (>)
 ```css
-div > p { color: blue; }   /* div ke SEEDHE BACHY p sirf */
+div > p { color: blue; }
+/* div ke SEEDHE BACHY p sirf */
 ```
 
-### 3. Next Sibling (`+`)
+### 3. Next Sibling Combinator (+)
 ```css
-h1 + p { color: green; }   /* h1 ke TURANT baad wala sirf ek p */
+h1 + p { color: green; }
+/* h1 ke TURANT baad wala SIRF EK p */
 ```
 
-### 4. Subsequent Siblings (`~`)
+### 4. Subsequent Sibling Combinator (~)
 ```css
-h1 ~ p { color: orange; }   /* h1 ke baad ke SARE p siblings */
+h1 ~ p { color: orange; }
+/* h1 ke baad ke SARE p siblings */
 ```
 
 ---
 
-## 📌 Jaldi Yaad Karne Ka Tareeqa
-| Symbol | Naam               | Matlab                     |
-|--------|--------------------|----------------------------|
-| ` `    | Descendant         | Andar ka koi bhi           |
-| `>`    | Child              | Seedha bacha sirf          |
-| `+`    | Adjacent Sibling   | Agla ek bhai-bhan          |
-| `~`    | General Sibling    | Baad ke sare bhai-bhan     |
+## Practice File Se Code (`03 Next sibling combinator (+)/`)
+
+```html
+<div><ul><li>Item 1</li><li>Item 2</li></ul></div>
+<h1>Adjacent Sibling Combinator Test</h1>
+<p>Yeh h1 ke turant baad hai...</p>
+
+<h1 class="main-heading">Test with class</h1>
+<p class="paragraph">Yeh class wala para...</p>
+```
 
 ---
 
-## 📝 Summary
-Sibling combinators advanced CSS mein bahut kaam aate hain. Layouts aur list styling mein yeh frequently use hote hain.
+## Quick Reference
+
+| Symbol | Naam | Matlab |
+|--------|------|--------|
+| space | Descendant | Andar koi bhi matching descendant |
+| `>` | Child | Seedha bacha sirf |
+| `+` | Adjacent Sibling | Agla ek bhai |
+| `~` | Subsequent Sibling | Baad ke tamam matching siblings |
+
+---
+
+## Real-World Use Cases
+
+```css
+li + li { border-top: 1px solid gray; }
+label + input { margin-left: 10px; }
+h2 ~ p { color: #555; }
+nav > a { font-weight: bold; }
+```

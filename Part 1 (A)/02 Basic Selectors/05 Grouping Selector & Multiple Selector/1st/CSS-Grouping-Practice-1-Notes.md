@@ -1,17 +1,13 @@
-# 🎯 01 Grouping Selector — Practice 1
+# Grouping Selector - Practice 1
 
-## 📚 Is Folder Ka Maqsad
-Grouping Selector ki **pehli practice** — Ek sath kai elements ko style karna.
+Basic grouping selector ki pehli practice.
 
----
+## Seekha Kya?
+Kai alag alag HTML tags ko comma se group kar ke ek jaisi style di.
 
-## 📁 Files
-| File                       | Description                                 |
-|----------------------------|---------------------------------------------|
-| `01 Grouping Selector.html`| HTML file with multiple grouped elements     |
-| `01 Grouping Selector.css` | CSS file with grouped selectors              |
-
----
-
-## 📝 Summary
-Is practice mein `h1, h2, p` ko ek sath comma se group karke style kiya gaya hai.
+```css
+h1, h2, h3, p {
+    color: blue;
+    font-family: Arial;
+}
+```

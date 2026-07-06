@@ -1,51 +1,72 @@
-# 🎨 3 External CSS
+# CSS External CSS - Mukammal Notes (Professional Tareeqa)
 
-## 📚 Is Folder Ka Maqsad
-Yeh folder **External CSS** ki practice ke liye hai — yeh CSS ka **professional aur sabse behtareen tareeqa** hai.
+## External CSS Kya Hai?
+Ek bilkul alag `.css` file mein saari CSS likhi jati hai. HTML file mein `<link>` tag se connect kiya jata hai. Yeh CSS ka sabse professional tareeqa hai.
 
 ---
 
-## 📖 External CSS Kya Hai?
-Ek alag `.css` extension wali file banai jati hai jisme saari CSS likhi jati hai. Phir HTML file mein `<link>` tag se wo file connect ki jati hai.
+## Hamari Practice Files
 
-**HTML File:**
+### HTML: `01 External CSS.html`
 ```html
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="02 style.css">
 </head>
+<body>
+    <h1>Yeh External CSS Hai! (Professional Way)</h1>
+    <p>HTML bilkul saaf hai, aur saara design doosri file se aa raha hai!</p>
+</body>
 ```
 
-**CSS File (style.css):**
+### CSS: `02 style.css`
 ```css
-h1 {
-    color: red;
-    font-size: 36px;
+/* Yeh alag CSS file hai */
+body {
+    background-color: #222222;  /* Dark Theme */
 }
+
+h1 {
+    color: white;
+    text-align: center;
+    border: 2px solid white;
+    padding: 10px;
+}
+
 p {
-    color: gray;
+    color: white;
+    text-align: center;
+    font-size: 24px;
 }
 ```
 
----
-
-## ✅ Fayde
-- Ek `.css` file kai HTML files par apply ho sakti hai.
-- Code bilkul alag aur saaf rehta hai.
-- Team mein kaam karna asaan hota hai.
-- **Professional aur real-world projects mein yahi use hoti hai.** ✅
-
-## ❌ Nuqsanat
-- Ek extra HTTP request jaati hai (magar yeh negligible hai).
-
----
-
-## 📁 Files
-| File                   | Description                                    |
-|------------------------|------------------------------------------------|
-| `01 External CSS.html` | HTML file jo external CSS se linked hai        |
-| `02 style.css`         | Bahari CSS file jisme saari styling hai        |
+### Use Hone Wali Properties:
+| Property | Value | Kaam |
+|----------|-------|------|
+| `background-color` | `#222222` | Body ka dark background |
+| `color` | `white` | Text safeed |
+| `text-align` | `center` | Text center mein |
+| `border` | `2px solid white` | H1 ke gird border |
+| `padding` | `10px` | Andar se jagah |
+| `font-size` | `24px` | Paragraph ka size |
 
 ---
 
-## 📝 Summary
-External CSS seekhna sab se zaroori hai. Real projects, frameworks, aur jobs mein yahi tareeqa use hota hai.
+## `<link>` Tag Ke Attributes
+```html
+<link rel="stylesheet" href="02 style.css">
+```
+| Attribute | Matlab |
+|-----------|--------|
+| `rel="stylesheet"` | Batata hai ke yeh CSS file hai |
+| `href="..."` | CSS file ka raasta (path) |
+
+---
+
+## Fayde
+- Ek CSS file - kai sari HTML files par apply
+- HTML aur CSS alag, saaf aur reusable
+- Professional aur real-world standard
+- Browser caching se performance behtar
+
+## Nuqsan
+- Ek extra file manage karni padti hai (koi bari baat nahi)

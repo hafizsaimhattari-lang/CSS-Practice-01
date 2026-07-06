@@ -1,14 +1,57 @@
-# 🎯 04 Universal Selector
+# CSS Universal Selector (*) - Mukammal Notes
 
-## 📚 Is Folder Ka Maqsad
-Yeh folder **Universal Selector** ki practice ke liye hai.
+## Universal Selector Kya Hai?
+Page ke har ek element ko ek sath select karta hai. `*` (asterisk) ka nishaan use hota hai.
+
+```css
+* {
+    property: value;
+}
+```
 
 ---
 
-## 📖 Universal Selector Kya Hai?
-Universal selector page ke **har ek element** ko ek sath select karta hai. Iske liye `*` (asterisk/star) use hota hai.
+## Hamari Practice File: `01 Univercal Selector.html` + `.css`
+
+### CSS:
+```css
+/* "Page par jo kuch bhi hai, sab ko pakar lo!" */
+* {
+    text-align: center;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: underline;
+}
+```
+
+### HTML:
+```html
+<h1>Univercal Selector Practice</h1>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
+```
+
+**Natija:** Har element - body, h1, p sab - black background, white text, border, gol corners.
+
+### Properties:
+| Property | Value | Kaam |
+|----------|-------|------|
+| `text-align` | `center` | Sab center |
+| `color` | `white` | Sab text safeed |
+| `background-color` | `black` | Sab ka background kala |
+| `border` | `2px solid white` | Sab ke gird border |
+| `border-radius` | `10px` | Sab ke corners gol |
+| `padding` | `10px` | Har element ke andar jagah |
+| `text-decoration` | `underline` | Sab underline |
+
+---
+
+## Sabse Common Use - CSS Reset
 
 ```css
+/* Har professional CSS file ke sabse upar */
 * {
     margin: 0;
     padding: 0;
@@ -16,35 +59,10 @@ Universal selector page ke **har ek element** ko ek sath select karta hai. Iske 
 }
 ```
 
----
-
-## 🔥 Sabse Common Use Case — CSS Reset
-Browser apne default margin aur padding add karta hai. Universal selector se unhe zero kar diya jata hai:
-
-```css
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-```
-> Yeh almost **har professional CSS file** ke sabse upar likha jata hai!
+Browser ki default margin/padding hatane ke liye use karte hain.
 
 ---
 
-## ⚠️ Savdhaani
-- Universal selector bahut powerful hai — galat use karne se poora design bigad sakta hai.
-- Mostly sirf CSS reset ke liye use karo.
-
----
-
-## 📁 Files
-| File                          | Description                     |
-|-------------------------------|---------------------------------|
-| `01 Univercal Selector.html`  | Universal selector ka HTML      |
-| `01 Univercal Selector.css`   | Universal selector ka CSS       |
-
----
-
-## 📝 Summary
-`*` selector jadugarni hai magar savdhaani se use karo. CSS reset ke liye yeh ek standard practice hai.
+## Savdhaani
+- Bahut powerful hai - har cheez pakad leta hai
+- Mostly sirf CSS reset ke liye use karo

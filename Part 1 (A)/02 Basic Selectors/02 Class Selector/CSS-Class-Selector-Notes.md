@@ -1,56 +1,79 @@
-# 🎯 02 Class Selector
+# CSS Class Selector - Mukammal Notes
 
-## 📚 Is Folder Ka Maqsad
-Yeh folder **Class Selector** ki practice ke liye hai.
-
----
-
-## 📖 Class Selector Kya Hai?
-Class selector un elements ko select karta hai jinka `class=""` attribute ek specific naam ka ho. CSS mein class selector `.` (dot) se likha jata hai.
-
-```html
-<!-- HTML -->
-<h1 class="title">Main Heading</h1>
-<p class="intro">Yeh paragraph hai.</p>
-```
+## Class Selector Kya Hai?
+`class=""` attribute wale elements ko target karta hai. CSS mein dot (`.`) se likha jata hai. CSS ka sabse zyada use hone wala selector.
 
 ```css
-/* CSS */
-.title {
-    color: darkblue;
-    font-size: 36px;
-}
-.intro {
-    color: gray;
-    font-size: 18px;
+.className {
+    property: value;
 }
 ```
 
 ---
 
-## 📌 Yaad Rakho
-- Ek hi class **kai elements** par lagayi ja sakti hai.
-- Ek element mein **kai classes** bhi ho sakti hain: `class="btn primary large"`.
-- Class selector ID selector se zyada use hota hai.
+## Hamari Practice File 1: `01 Class Selector Practice/`
 
-### Multi-class Example:
+### HTML:
 ```html
-<button class="btn primary">Click Me</button>
+<h2 class="heading-highlight">Primary Heading</h2>
+<p class="paragraph-highlight">This paragraph shares the exact same design.</p>
+<p class="paragraph-highlight">This is another paragraph styled simultaneously.</p>
 ```
+
+### CSS (`01 Class Selector.css`):
 ```css
-.btn { padding: 10px 20px; border-radius: 5px; }
-.primary { background-color: blue; color: white; }
+body { background-color: black; }
+
+.heading-highlight {
+    color: white;
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.paragraph-highlight {
+    color: white;
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+```
+
+**Natija:** Dono paragraphs aur heading ek jaisi red styling milti hai.
+
+### Properties:
+| Property | Value | Kaam |
+|----------|-------|------|
+| `background-color` | `red` | Background rang |
+| `color` | `white` | Text ka rang |
+| `padding` | `10px` | Andar jagah |
+| `border-radius` | `5px` | Corners gol |
+| `text-align` | `center` | Center mein |
+
+---
+
+## Class Ke Zaroori Rules
+
+### Ek class -> Kai elements
+```html
+<h1 class="highlight">Heading</h1>
+<p class="highlight">Para</p>
+<span class="highlight">Span</span>
+```
+
+### Ek element -> Kai classes
+```html
+<button class="btn primary large">Click</button>
 ```
 
 ---
 
-## 📁 Files
-| Folder                       | Description                                |
-|------------------------------|--------------------------------------------|
-| `01 Class Selector Practice` | Pehli practice (External CSS ke sath)      |
-| `02 Class Selector Practice` | Doosri practice (Internal CSS ke sath)     |
+## Class vs ID
 
----
-
-## 📝 Summary
-Class selector CSS ka sabse zyada use hone wala selector hai. Isko perfect karo!
+| Feature | Class (.) | ID (#) |
+|---------|-----------|--------|
+| Ek page par | Kai elements | Sirf ek element |
+| CSS mein | `.className` | `#idName` |
+| Preferred | Styling ke liye | Uniqueness ke liye |

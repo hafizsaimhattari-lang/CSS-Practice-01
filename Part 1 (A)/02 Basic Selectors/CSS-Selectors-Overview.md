@@ -1,67 +1,69 @@
-# 🎯 02 Basic Selectors
+# CSS Basic Selectors - Mukammal Overview
 
-## 📚 Is Folder Ka Maqsad
-Yeh folder **CSS Basic Selectors** ki practice ke liye hai. CSS mein kisi bhi element ko style karne se pehle use **select** karna padta hai — yahi kaam Selectors karte hain.
+## Selectors Kya Hain?
+CSS Selector woh tareeqa hai jis se batate hain ke "CSS in elements par lagaao". Is folder mein 7 qisam ke selectors ki practice ki gayi hai.
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 
 ```
 02 Basic Selectors/
-├── 01 Element Selector/              (Tag naam se select karo)
-├── 02 Class Selector/               (Class naam se select karo)
-├── 03 Id Selector/                  (ID se select karo - unique element)
-├── 04 Univercal Selector/           (Sab elements ek sath)
-├── 05 Grouping Selector & Multiple/ (Kai selectors ek sath)
-├── 06 Descendent Selector/          (Nested elements ko target karo)
-├── 07 Sibling Combinators/          (Bhai-bhai elements ko select karo)
-└── README.md                        (Yeh file)
+|-- 01 Element Selector/         Tag naam se select
+|-- 02 Class Selector/           .className se select
+|-- 03 Id Selector/              #idName se select
+|-- 04 Univercal Selector/       * se sab kuch
+|-- 05 Grouping Selector/        Kai selectors ek sath
+|-- 06 Descendent Selector/      Nested elements
+|-- 07 Sibling Combinators/      Bhai-bhan elements
 ```
 
 ---
 
-## 🎯 Har Selector Ka Mukhtar Idea
+## Saat Selectors - Ek Nazar Mein
 
-### 1️⃣ Element Selector
 ```css
-p { color: red; }    /* Sare <p> tags red ho jayenge */
-h1 { font-size: 40px; }
-```
+/* 1. Element Selector */
+h1 { color: white; background-color: black; }
 
-### 2️⃣ Class Selector (`.`)
-```css
-.btn { background-color: blue; }   /* class="btn" wale elements */
-```
+/* 2. Class Selector */
+.heading-highlight { background-color: red; color: white; }
 
-### 3️⃣ ID Selector (`#`)
-```css
-#main-heading { color: green; }   /* id="main-heading" wala element */
-```
-> ⚠️ ID unique hoti hai — ek page par ek element ka hi ID hona chahiye.
+/* 3. ID Selector */
+#special-box { border: 3px solid gold; }
 
-### 4️⃣ Universal Selector (`*`)
-```css
-* { margin: 0; padding: 0; }   /* Sab elements */
-```
+/* 4. Universal Selector */
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
-### 5️⃣ Grouping Selector
-```css
+/* 5. Grouping Selector */
 h1, h2, h3, p { font-family: Arial; }
-```
 
-### 6️⃣ Descendant Selector (Space)
-```css
-div p { color: purple; }   /* Sirf div ke andar wale <p> */
-```
+/* 6. Descendant Selector */
+div p { color: red; }
 
-### 7️⃣ Sibling Combinators
-```css
-h1 + p { color: orange; }  /* h1 ke turant baad wala p (+) */
-h1 ~ p { color: gray; }    /* h1 ke baad ke sare p (~) */
+/* 7. Sibling Combinators */
+h1 + p { color: green; }   /* Next sibling */
+h1 ~ p { color: gray; }    /* Subsequent siblings */
+div > p { color: blue; }   /* Direct child */
 ```
 
 ---
 
-## 📝 Summary
-Selectors CSS ki jaan hain. Agar selector theek se nahi aaya toh styling fail ho jati hai. Inhe achi tarah practice karo.
+## Konsa Selector Kab?
+
+| Situation | Selector |
+|-----------|----------|
+| Sab `<p>` tags | Element |
+| Kuch khaas elements | Class |
+| Ek specific element | ID |
+| Sab ko ek style | Universal |
+| Kai elements ek jaisi style | Grouping |
+| Parent ke andar wale | Descendant |
+| Bhai-bhan elements | Sibling |
+
+---
+
+## CSS Specificity (Kon Jeeta?)
+```
+!important > Inline > ID > Class > Element > Universal
+```

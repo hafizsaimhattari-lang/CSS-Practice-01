@@ -1,10 +1,5 @@
-# 🎯 00 Descendant Combinators — Practice 2
+# Descendant Combinator - Practice 2
 
-## 📁 Files
-| File                          | Description                        |
-|-------------------------------|------------------------------------|
-| `02 Descendent Selector.html` | HTML deeper nested structure       |
-| `02 Descendent Selector.css`  | CSS with space combinator (deep)   |
+Descendant combinator ki doosri practice.
 
-## 📝 Summary
-Deep nesting wala descendant combinator practice.
+**Seekha:** Alag HTML structures mein descendant combinator apply karna.

@@ -1,0 +1,29 @@
+body {
+    background-color:black;
+}
+
+* {
+    color: white;
+}
+
+header > h1 {
+    color: red;
+    border: 1px solid white;
+    text-align: center;
+}
+
+header ~ h1 {
+    color: yellow;
+
+}
+
+h1 ~ .div-para > p {
+    color: white;
+    text-align: center;
+    text-decoration:underline;
+}
+
+br ~ div ol li {
+    color:chartreuse;
+    text-decoration:underline;
+}

@@ -1,17 +1,11 @@
-# 🎯 01 First — Descendant Selector Practice 1
+# Descendant Selector - Practice 1
 
-## 📚 Is Folder Ka Maqsad
-Descendant Selector ki **pehli practice**.
+Descendant selector ki pehli practice.
 
----
+## Files
+| File | Kaam |
+|------|------|
+| `01 Descendent Selector.html` | HTML structure |
+| `01 Descendent Selector.css` | `parent child { }` CSS |
 
-## 📁 Files
-| File                          | Description                      |
-|-------------------------------|----------------------------------|
-| `01 Descendent Selector.html` | HTML — nested elements           |
-| `01 Descendent Selector.css`  | CSS — descendant selector use    |
-
----
-
-## 📝 Summary
-Is practice mein parent ke andar wale elements ko space ` ` se select kiya gaya hai.
+**Seekha:** Parent ke andar wale elements space se target karna.

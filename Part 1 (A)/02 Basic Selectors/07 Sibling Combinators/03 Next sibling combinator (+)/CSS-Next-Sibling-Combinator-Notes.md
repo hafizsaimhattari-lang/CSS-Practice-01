@@ -1,23 +1,46 @@
-# 🎯 03 Next Sibling Combinator (`+`)
+# Next Sibling Combinator (+) - Mukammal Notes
 
-## 📖 Kya Hai?
-`+` combinator kisi element ke **turant agle ek sibling** ko select karta hai.
+## Kya Hai?
+Next Sibling Combinator (`+`) sirf ek element ke turant baad aane wale sibling ko target karta hai.
 
 ```css
-h1 + p { color: green; }   /* h1 ke bilkul baad wala pehla p */
+h1 + p { color: green; }
+/* h1 ke FORAN baad wala sirf EK p */
 ```
 
 ---
 
-## 📁 Files
-| File                                      | Description                          |
-|-------------------------------------------|--------------------------------------|
-| `01 Next sibling combinator (+).html`     | Pehli practice — adjacent sibling    |
-| `01 Next-sibling-combinator-(+).css`      | Uski CSS                             |
-| `02 Next sibling combinator (+).html`     | Doosri practice                      |
-| `02 Next-sibling-combinator-(+).css`      | Uski CSS                             |
+## Hamari Practice File Se Code
+
+```html
+<!-- Element selectors ke sath -->
+<div><ul><li>Item 1</li><li>Item 2</li></ul></div>
+<h1>Adjacent Sibling Combinator Test</h1>
+<p>Lorem ipsum... <- Yeh h1 ke turant baad, style milegi</p>
+
+<div><ul>...</ul></div>
+<h1>Adjacent Sibling Combinator Test</h1>
+<p>Lorem ipsum... <- Phir se ek h1 + p</p>
+
+<!-- Class ke sath -->
+<div><ol>...</ol></div>
+<h1 class="main-heading">Test</h1>
+<p class="paragraph">Lorem... <- .main-heading + .paragraph</p>
+
+<button type="submit">Submit</button>
+```
 
 ---
 
-## 📝 Summary
-`+` combinator buttons, forms, aur list items ki styling mein bahut kaam aata hai.
+## Important Rules
+- Dono elements ek hi parent ke under hon
+- Sirf AGLA ek element pakadta hai
+- Dono adjacent (bilkul sath) hona zaroori
+
+---
+
+## Next (+) vs Subsequent (~)
+```css
+h1 + p { }  /* Sirf agla ek p */
+h1 ~ p { }  /* Baad ke sare p */
+```
