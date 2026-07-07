@@ -1,0 +1,50 @@
+body {
+    background-color:black;
+}
+h1 {
+    color:white;
+}
+
+input, button {
+    padding: 10px;
+    margin: 10px;
+}
+
+input {
+    border-radius: 5px;
+    border: 2px solid red;
+}
+.input-field:focus {
+    background-color: lightgray;
+     border: 3px solid red;
+}
+
+button {
+    border-radius: 5px;
+    border: 2px solid red;
+}
+button:hover {
+    background-color: yellow;
+    border: 3px solid green;
+    border-radius: 10px;
+}
+
+button:active {
+    background-color: blue;
+    color: white;
+    border: 3px solid yellow;
+    border-radius: 10px;
+}
+
+a:hover {
+    color: red;
+
+}
+
+a:active {
+    color: white;
+}
+
+a {
+    color: yellow;
+}
