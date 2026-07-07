@@ -1,25 +1,47 @@
+/* Body selector puray page ka background set karta hai */
 body {
-    background-color:black;
+    /* Page ka background black hai */
+    background-color: black;
 }
- label {
-    color:white;
- }
 
- input:hover {
-    background-color:yellow;
-    color:black;
- }
+/* Label normal state */
+label {
+    /* Black background par label white clearly dikhega */
+    color: white;
+}
 
- input:active {
-    border:3px solid white;
-     background-color:blue;
-     color:white;
- }
+/* Input hover state */
+input:hover {
+    /* Mouse input ke upar aaye to background yellow ho jayega */
+    background-color: yellow;
 
- button:active {
-    background-color:blue;
-    color:white;
-    border:3px solid white;
-    border-radius:5px;
- }
+    /* Yellow background par text black readable rahega */
+    color: black;
+}
 
+/* Input active state */
+input:active {
+    /* Input press/click ke moment par white border show hogi */
+    border: 3px solid white;
+
+    /* Active state me input ka background blue ho jayega */
+    background-color: blue;
+
+    /* Blue background par text white readable rahega */
+    color: white;
+}
+
+/* Button active state */
+button:active {
+    /* Button press karte waqt background blue ho jayega */
+    background-color: blue;
+
+    /* Button ka text white ho jayega */
+    color: white;
+
+    /* Active state ko clear show karne ke liye border */
+    border: 3px solid white;
+
+    /* Button ke corners thore round ho jayenge */
+    border-radius: 5px;
+}

@@ -3,6 +3,7 @@
     Topic: 03 Next sibling combinator (+)
     Objective: Practice exercises for 03 Next sibling combinator (+)
 */
+/* header ke foran baad aane wale paragraph ko target karta hai */
 header + p {
     text-align:center;
     border:2px solid white;
@@ -10,6 +11,7 @@ header + p {
     color:red;
 }
 
+/* header ke andar h1 ko normal descendant selector se style karta hai */
 header h1 {
 
     background-color: black;
@@ -17,12 +19,14 @@ header h1 {
     padding:5px;
 }
 
+/* main ke andar div ke andar ul ko style karta hai */
 main div ul {
 
     color:blueviolet;
     background-color:lightgray;
 }
 
+/* first-br ke foran baad wali first-para ko target karta hai */
 #first-br + .first-para {
     color:darkred;
     background-color:lightyellow;
@@ -30,6 +34,7 @@ main div ul {
     border:2px solid black;
 }
 
+/* second-div ke andar wali second-para ko descendant selector se target karta hai */
 main #second-div .second-para {
     color:darkblue;
     background-color:lightgreen;
@@ -41,4 +46,3 @@ main #second-div .second-para {
     Summary:
     This is a practice file for 03 Next sibling combinator (+).
 */
-

@@ -1,50 +1,92 @@
+/* Body selector puray page ka basic background set karta hai */
 body {
-    background-color:black;
-}
-h1 {
-    color:white;
+    /* Black background se colored states clearly nazar aati hain */
+    background-color: black;
 }
 
-input, button {
+/* Heading ko white color diya gaya hai taake black background par readable ho */
+h1 {
+    color: white;
+}
+
+/* Input aur button dono par same spacing apply ki gayi hai */
+input,
+button {
+    /* Element ke andar ki spacing */
     padding: 10px;
+
+    /* Element ke bahar ki spacing */
     margin: 10px;
 }
 
+/* Normal input styling */
 input {
+    /* Input ke corners round karne ke liye */
     border-radius: 5px;
+
+    /* Input ka default red border */
     border: 2px solid red;
 }
+
+/* Input focus state */
 .input-field:focus {
+    /* Input focus hone par background light gray ho jayega */
     background-color: lightgray;
-     border: 3px solid red;
+
+    /* Focus ko clear show karne ke liye border thora thick ho jayega */
+    border: 3px solid red;
 }
 
+/* Normal button styling */
 button {
+    /* Button ke corners round karne ke liye */
     border-radius: 5px;
+
+    /* Button ka default border */
     border: 2px solid red;
 }
+
+/* Button hover state: jab mouse button ke upar ho */
 button:hover {
+    /* Hover hone par button ka background yellow ho jayega */
     background-color: yellow;
+
+    /* Hover hone par button ka border green ho jayega */
     border: 3px solid green;
+
+    /* Hover state me corners zyada round ho jayenge */
     border-radius: 10px;
 }
 
+/* Button active state: jab button press ho raha ho */
 button:active {
+    /* Button press hone par background blue ho jayega */
     background-color: blue;
+
+    /* Blue background par text white clearly dikhega */
     color: white;
+
+    /* Active state ko show karne ke liye yellow border */
     border: 3px solid yellow;
+
+    /* Active state me bhi rounded corners rahenge */
     border-radius: 10px;
 }
 
+/* Link hover state */
 a:hover {
+    /* Mouse link ke upar ho to link red ho jayega */
     color: red;
-
 }
 
+/* Link active state */
 a:active {
+    /* Link press/click hone ke moment par color white hoga */
     color: white;
 }
 
+/* Link ki normal styling */
 a {
+    /* Normal state me link yellow rahega */
     color: yellow;
 }

@@ -1,17 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Page ki character encoding set kar raha hai -->
     <meta charset="UTF-8">
+
+    <!-- Page ko mobile aur desktop dono screens par responsive banata hai -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Browser tab me ye title show hota hai -->
     <title>
         Focus Pseudo Class
     </title>
+
+    <!-- External CSS file link ki gayi hai -->
     <link rel="stylesheet" href="01 Focus-Pseudo-Class.css">
 </head>
 <body>
+    <!-- Page ka main heading -->
     <h1>Focus Pseudo Class</h1>
+
+    <!-- User ke liye simple instruction -->
     <p>Click on the input field to see the effect of the focus pseudo class.</p>
+
+    <!--
+        Ye input field focus pseudo class test karne ke liye hai.
+        Jab user is par click karega ya Tab key se is par aayega,
+        CSS me .input-field:focus wali styling apply hogi.
+    -->
     <input type="text" placeholder="Click here to focus" class="input-field">
+
+    <!--
+        Ye button bhi focus test ke liye hai.
+        Button par click karne ya keyboard se select karne par button:focus apply hoga.
+    -->
     <button type="button">Submit</button>
 
 </body>

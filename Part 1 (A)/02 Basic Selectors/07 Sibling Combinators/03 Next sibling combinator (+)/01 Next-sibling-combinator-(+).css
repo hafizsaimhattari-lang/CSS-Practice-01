@@ -4,19 +4,23 @@
     Objective: Practice exercises for 03 Next sibling combinator (+)
 */
 body {
+    /* Page ka background black */
     background-color: black;
 }
 
 * {
+    /* Default text color white */
     color: white;
 }
 
+/* div ke foran baad aane wale h1 ko target karta hai */
 div + h1 {
     text-align:center;
     border:2px solid white;
     padding:10px;
 }
 
+/* h1 ke foran baad aane wale paragraph ko target karta hai */
 h1 + p{
 
     color:yellow;
@@ -25,15 +29,14 @@ h1 + p{
 
 }
 
+/* div ke foran baad aane wali .main-heading ko target karta hai */
 div + .main-heading {
     text-align:center;
     border:2px solid white;
     padding:10px;
 }
 
-
-
-
+/* div ke andar lists ke items ko style karta hai */
 div ul li, div ol li {
     text-align:center;
     border:1px solid white;
@@ -42,6 +45,7 @@ div ul li, div ol li {
     color:skyblue;
 }
 
+/* br ke foran baad aane wale button ko target karta hai */
 br + button {
 
     background-color:black;
@@ -52,4 +56,3 @@ br + button {
     Summary:
     This is a practice file for 03 Next sibling combinator (+).
 */
-

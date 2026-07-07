@@ -3,18 +3,21 @@
     Topic: 2nd
     Objective: Practice exercises for 2nd
 */
+/* Universal selector sab elements par basic text styling apply karta hai */
 *{
     text-align:center;
     color:white;
 }
 
-p, h1, h2, p {
+/* Grouping selector: p, h1 aur h2 ko ek hi rule me style kar raha hai */
+p, h1, h2 {
     text-align:center;
     border:2px solid red;
     border-radius:10px;
     padding:10px;
 }
 
+/* Body ka background black set kiya gaya hai */
 body{
     background-color:black;
 }
@@ -22,4 +25,3 @@ body{
     Summary:
     This is a practice file for 2nd.
 */
-

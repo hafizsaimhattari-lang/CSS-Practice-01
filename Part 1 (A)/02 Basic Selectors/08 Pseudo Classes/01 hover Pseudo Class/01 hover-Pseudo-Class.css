@@ -1,57 +1,92 @@
+/* Body selector puray page ka background set karta hai */
 body {
-    background-color:blue
+    /* Page ka background blue rakha gaya hai */
+    background-color: blue;
 }
 
+/* Universal selector page ke har element par apply hota hai */
 * {
-    color:white;
+    /* Default text color white rakha gaya hai */
+    color: white;
 }
 
+/* Form wrapper ko center align karne ke liye */
 .form-div {
-    text-align:center;
+    /* Form ka text aur inline content center me aa jayega */
+    text-align: center;
 }
 
+/* Button hover state */
 #Submit-Button-01:hover {
-    background-color:black;
-    color:white;
-    border:2px solid white;
+    /* Mouse button ke upar aane par background black ho jayega */
+    background-color: black;
+
+    /* Hover state me button text white ho jayega */
+    color: white;
+
+    /* Hover state ko clear show karne ke liye border */
+    border: 2px solid white;
 }
 
-.Submit-Form-Button{
-    color:black;
+/* Button ki normal class styling */
+.Submit-Form-Button {
+    /* Normal state me button ka text black rahega */
+    color: black;
 }
 
+/* Form ke andar input hover state */
 .Form input:hover {
-    background-color:black;
-    color:white;
+    /* Input par mouse aane par background black ho jayega */
+    background-color: black;
 
+    /* Input ka text white ho jayega */
+    color: white;
 }
 
+/* Form ke andar input ki normal styling */
 .Form input {
-    color:black;
+    /* Normal input text black rahega */
+    color: black;
 }
 
+/* Adjacent sibling selector: br ke foran baad wala p */
 br + p {
-    color:yellow;
-    text-align:center;
+    /* Paragraph ka text yellow */
+    color: yellow;
+
+    /* Paragraph center align */
+    text-align: center;
 }
 
+/* Anchor links hover state */
 .anchor-links ul li a:hover {
-    color:chartreuse;
-    text-decoration:underline;
+    /* Link par mouse aane par color chartreuse ho jayega */
+    color: chartreuse;
+
+    /* Hover par underline show hogi */
+    text-decoration: underline;
 }
 
+/* Paragraph ke foran baad h1 hover state */
 .first-para + h1:hover {
-    color:white;
+    /* Heading hover hone par white ho jayegi */
+    color: white;
 }
 
+/* Paragraph ke foran baad h1 normal state */
 .first-para + h1 {
-    color:yellow;
+    /* Heading normal state me yellow hai */
+    color: yellow;
 }
 
+/* Paragraph hover state */
 .first-para:hover {
-    color:white;
+    /* Paragraph par mouse aane par text white ho jayega */
+    color: white;
 }
 
+/* Paragraph normal state */
 .first-para {
-    color:yellow;
+    /* Paragraph normal state me yellow hai */
+    color: yellow;
 }

@@ -1,29 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Page ki character encoding set kar raha hai -->
     <meta charset="UTF-8">
+
+    <!-- Page ko mobile aur desktop dono screens par responsive banata hai -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Browser tab ka title -->
     <title>00 Pseudo Classes Test</title>
+
+    <!-- External CSS file link ki gayi hai -->
     <link rel="stylesheet" href="01 hover-Pseudo-Class.css">
 </head>
 <body>
 
+    <!-- Form wrapper div, is se form ko CSS me center karna easy hota hai -->
     <div class="form-div">
-    <form class="Form" action="#">
-        <label for="Full-Name">Full Name : </label>
-        <input type="text" id="Full-Name" placeholder="Enter Your Name">
 
-        <button type="Submit" id="Submit-Button-01" class="Submit-Form-Button">Submit </button>
-    </form>
+        <!-- Form element hover practice ke liye use ho raha hai -->
+        <form class="Form" action="#">
+
+            <!-- Label input field ka naam batata hai -->
+            <label for="Full-Name">Full Name : </label>
+
+            <!-- Input field par hover karne se CSS me input:hover wali styling apply hogi -->
+            <input type="text" id="Full-Name" placeholder="Enter Your Name">
+
+            <!-- Button par hover karne se #Submit-Button-01:hover wali styling apply hogi -->
+            <button type="Submit" id="Submit-Button-01" class="Submit-Form-Button">Submit </button>
+        </form>
     </div>
 
+    <!-- Spacing ke liye line break -->
     <br>
 
+    <!-- Paragraph par hover effect test karne ke liye class di gayi hai -->
     <p class="first-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus asperiores consequuntur quae aperiam dicta unde reprehenderit commodi debitis ullam? Harum, doloribus? Impedit perferendis, enim quia corrupti voluptates laboriosam harum quod consectetur ipsa recusandae cupiditate laudantium eius expedita suscipit obcaecati, soluta excepturi ex officiis, placeat dolore? Sequi non ratione qui amet?</p>
 
+    <!-- Is heading par sibling selector aur hover dono test ho rahe hain -->
     <h1>Anchor Links</h1>
+
+    <!-- Anchor links section -->
     <div class="anchor-links">
         <ul>
+            <!-- Har link par hover karne se color aur underline change hogi -->
             <li><a href="https://www.google.com" target="_blank">Saim</a></li>
             <li><a href="https://www.google.com" target="_blank">Kashif</a></li>
             <li><a href="https://www.google.com" target="_blank">Imran</a></li>

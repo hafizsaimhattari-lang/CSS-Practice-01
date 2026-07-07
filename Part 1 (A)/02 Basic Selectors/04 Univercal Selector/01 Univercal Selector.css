@@ -1,7 +1,7 @@
 ﻿/*
     PART 1 (A) - CSS Basic
-    Topic: 04 Univercal Selector
-    Objective: Practice exercises for 04 Univercal Selector
+    Topic: 04 Universal Selector
+    Objective: Practice exercises for Universal Selector
 */
         
         
@@ -10,16 +10,28 @@
  */
 
 * {
+    /* Har element ka text center align hoga */
     text-align:center;
+
+    /* Har element ka text white hoga */
     color:white;
+
+    /* Har element ka background black hoga */
     background-color:black;
+
+    /* Har element ke around white border hoga */
     border:2px solid white;
+
+    /* Corners rounded honge */
     border-radius:10px;
+
+    /* Content aur border ke darmiyan spacing */
     padding:10px;
+
+    /* Har element ke text par underline hogi */
     text-decoration:underline;
 }
 /*
     Summary:
-    This is a practice file for 04 Univercal Selector.
+    This is a practice file for 04 Universal Selector.
 */
-

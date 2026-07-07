@@ -1,36 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Page ki character encoding set karta hai -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>01 SubSequent Sibling Combinator Test</title>
-    <link rel="stylesheet" href="01 Subsequent-Sibling-Combinator.css">
 
+    <!-- Mobile aur desktop dono ke liye responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Browser tab ka title -->
+    <title>01 SubSequent Sibling Combinator Test</title>
+
+    <!-- External CSS file link ki gayi hai -->
+    <link rel="stylesheet" href="01 Subsequent-Sibling-Combinator.css">
 </head>
 <body>
+    <!-- Header ke andar h1 direct child hai, is par header > h1 selector apply hoga -->
     <header>
         <h1>SubSequent Sibling Combinator Test</h1>
     </header>
 
+    <!-- Ye h1 elements header ke baad ke siblings hain, header ~ h1 inko target karega -->
     <h1>01 SubSequent Sibling Combinator Test</h1>
     <h1>02 SubSequent Sibling Combinator Test</h1>
     <h1>03 SubSequent Sibling Combinator Test</h1>
-    
+
+    <!-- Ye div h1 ke baad aane wale sibling elements hain -->
     <div class="div-para">
+        <!-- h1 ~ .div-para > p selector is paragraph ko target karega -->
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptatem dolorem beatae, mollitia molestias tenetur eveniet reiciendis totam facere laudantium!</p>
     </div>
-    
+
+    <!-- Ye second div bhi previous h1 ke baad aata hai, is liye ~ selector ke range me hai -->
     <div class="div-para">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptatem dolorem beatae, mollitia molestias tenetur eveniet reiciendis totam facere laudantium!</p>
     </div>
 
+    <!-- Ye third div bhi same parent body ke andar h1 ke baad aata hai -->
     <div class="div-para">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptatem dolorem beatae, mollitia molestias tenetur eveniet reiciendis totam facere laudantium!</p>
     </div>
 
+    <!-- Spacing aur separator ke liye basic tags -->
     <br>
     <hr>
     <br>
+
+    <!-- br ke baad ye div aata hai, br ~ div ol li selector list items ko target karega -->
     <div>
         <ol>
             <li>Father</li>

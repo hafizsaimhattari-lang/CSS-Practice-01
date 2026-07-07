@@ -1,29 +1,50 @@
+/* Body selector puray page ka background set karta hai */
 body {
-    background-color:black;
+    /* Page ka background black hai */
+    background-color: black;
 }
 
+/* Universal selector page ke har element par apply hota hai */
 * {
+    /* Default text color white rakha gaya hai */
     color: white;
 }
 
+/* Child combinator: header ke direct child h1 ko target karta hai */
 header > h1 {
+    /* Header wali heading red hogi */
     color: red;
+
+    /* Heading ke around white border */
     border: 1px solid white;
+
+    /* Heading center align */
     text-align: center;
 }
 
+/* Subsequent sibling combinator: header ke baad ke tamam h1 siblings */
 header ~ h1 {
+    /* Header ke baad wali headings yellow hongi */
     color: yellow;
-
 }
 
+/* h1 ke baad aane wale .div-para ke direct child paragraph */
 h1 ~ .div-para > p {
+    /* Paragraph text white */
     color: white;
+
+    /* Paragraph text center */
     text-align: center;
-    text-decoration:underline;
+
+    /* Paragraph par underline */
+    text-decoration: underline;
 }
 
+/* br ke baad aane wale div ke andar ol li elements */
 br ~ div ol li {
-    color:chartreuse;
-    text-decoration:underline;
+    /* List items chartreuse color me show hongay */
+    color: chartreuse;
+
+    /* List items underline hongay */
+    text-decoration: underline;
 }

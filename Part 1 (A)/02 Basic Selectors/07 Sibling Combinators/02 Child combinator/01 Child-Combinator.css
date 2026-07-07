@@ -4,13 +4,16 @@
     Objective: Parent ke direct child ko select karna
 */
 body {
+    /* Page ka background black */
     background-color: black;
 }
 
 * {
+    /* Default text color white */
     color: white;
 }
 
+/* Header ke direct child h1 ko target kar raha hai */
 header > h1 {
     color: red;
     text-align: center;
@@ -18,17 +21,20 @@ header > h1 {
     padding: 10px;
 }
 
+/* parent-box ke direct child h2 ko target kar raha hai */
 .parent-box > h2 {
     color: yellow;
     text-align: center;
 }
 
+/* parent-box ke direct child paragraph ko target kar raha hai */
 .parent-box > p {
     color: skyblue;
     text-align: center;
     text-decoration: underline;
 }
 
+/* family-list ke direct child li elements ko target kar raha hai */
 .family-list > li {
     color: chartreuse;
     padding: 5px;

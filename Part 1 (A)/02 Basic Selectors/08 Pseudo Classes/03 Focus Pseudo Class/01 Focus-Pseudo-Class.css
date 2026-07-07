@@ -1,19 +1,39 @@
+/* Body selector puray page par style apply karta hai */
 body {
+    /* Font family se page ka text simple aur readable hota hai */
     font-family: Arial, sans-serif;
+
+    /* Page ka background black rakha gaya hai */
     background-color: black;
 }
 
-h1, p {
-  color: white;
-}
-.input-field:focus {
-  background-color:black;
-  color:white;
-  border: 5px solid white;
+/* Heading aur paragraph dono ko ek sath target kiya gaya hai */
+h1,
+p {
+    /* Black background par text clearly dikhane ke liye white color */
+    color: white;
 }
 
+/* Ye selector sirf us input par chalega jis ki class input-field hai aur woh focus me ho */
+.input-field:focus {
+    /* Focus hone par input ka background black ho jayega */
+    background-color: black;
+
+    /* Focus hone par input me likha text white dikhayega */
+    color: white;
+
+    /* Focus state ko clear dikhane ke liye white border */
+    border: 5px solid white;
+}
+
+/* Ye selector button ke focus state ko style karta hai */
 button:focus {
-   background-color:black;
-  color:white;
-  border: 2px solid white;
+    /* Button focus hone par background black ho jayega */
+    background-color: black;
+
+    /* Button ka text white ho jayega */
+    color: white;
+
+    /* Button focus ko show karne ke liye white border */
+    border: 2px solid white;
 }

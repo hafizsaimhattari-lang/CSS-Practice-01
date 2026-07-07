@@ -1,18 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Page ki character encoding set karta hai -->
     <meta charset="UTF-8">
+
+    <!-- Responsive design ke liye viewport setting -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Browser tab ka title -->
     <title>01 Active pseudo Class</title>
+
+    <!-- External CSS file link ki gayi hai -->
     <link rel="stylesheet" href="01 Active-Pseudo-Class.css">
 </head>
 <body>
+    <!-- Form wrapper div -->
     <div class="form-div">
-    <form class="Form" action="#">
-        <label for="Full-Name">Full Name : </label>
-        <input type="text" id="Full-Name" placeholder="Enter Your Name">
 
-        <button type="Submit" id="Submit-Button-01" class="Submit-Form-Button">Submit </button>
-    </form>
+        <!-- Form active pseudo class test ke liye -->
+        <form class="Form" action="#">
+
+            <!-- Label input ka naam batata hai -->
+            <label for="Full-Name">Full Name : </label>
+
+            <!-- Input par hover aur active states test hongi -->
+            <input type="text" id="Full-Name" placeholder="Enter Your Name">
+
+            <!-- Button par click press karne se button:active apply hoga -->
+            <button type="Submit" id="Submit-Button-01" class="Submit-Form-Button">Submit </button>
+        </form>
+    </div>
 </body>
 </html>
