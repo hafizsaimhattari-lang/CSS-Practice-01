@@ -1,112 +1,235 @@
 # CSS Pseudo Classes - Mukammal Overview
 
 ## Pseudo Class Kya Hai?
-Pseudo Class ek CSS selector hai jo kisi element ki **khaas halat (state)** mein style apply karta hai — maslan jab mouse us par ho, ya jab use click kiya ja raha ho.
+
+Pseudo class CSS selector ka special part hota hai jo kisi element ki khaas state ya condition par style apply karta hai.
+
+Simple alfaaz me:
+
+Jab user kisi element ke sath interact karta hai, ya element kisi special halat me hota hai, to pseudo class us state ko target karti hai.
+
+Basic syntax:
 
 ```css
 selector:pseudo-class {
-    property: value;
+  property: value;
 }
 ```
 
-Colon (`:`) lagane ke baad pseudo class ka naam aata hai.
+Example:
 
----
+```css
+button:hover {
+  background-color: yellow;
+}
+```
+
+Iska matlab:
+
+Jab mouse button ke upar aayega, button ka background yellow ho jayega.
 
 ## Folder Structure
 
-```
+```text
 08 Pseudo Classes/
-|-- 01 hover Pseudo Class/     :hover — mouse upar aane par
-|-- 02 Active Pseudo Class/    :active — click hone ke waqt
+|-- 01 hover Pseudo Class/     :hover  - mouse element ke upar ho
+|-- 02 Active Pseudo Class/    :active - element press/click ho raha ho
+|-- 03 Focus Pseudo Class/     :focus  - element selected/focused ho
 ```
 
----
+## Is Folder Me Covered Pseudo Classes
+
+| Pseudo Class | Kab Apply Hoti Hai? | Example |
+| --- | --- | --- |
+| `:hover` | Jab mouse element ke upar ho | Button par mouse le jana |
+| `:active` | Jab element press ho raha ho | Button click hold karna |
+| `:focus` | Jab element selected/focused ho | Input field par click ya Tab |
 
 ## Common Pseudo Classes
 
-| Pseudo Class | Kab Apply Hoti Hai |
-|-------------|-------------------|
-| `:hover` | Jab mouse element par aata hai |
-| `:active` | Jab element click ho raha ho |
-| `:focus` | Jab input mein cursor ho |
-| `:focus-visible` | Jab browser visible keyboard focus dikhana munasib samjhe |
-| `:visited` | Jab link already visit ki gayi ho |
-| `:checked` | Checked checkbox/radio |
-| `:disabled` | Disabled form control |
-| `:first-child` | Parent ka pehla bacha |
-| `:last-child` | Parent ka aakhri bacha |
-| `:nth-child(n)` | nth numbered bacha |
+| Pseudo Class | Matlab |
+| --- | --- |
+| `:hover` | Mouse element ke upar ho |
+| `:active` | Element click/press ho raha ho |
+| `:focus` | Element selected ya focused ho |
+| `:focus-visible` | Browser keyboard focus visibly show kare |
+| `:visited` | Link pehle visit ho chuki ho |
+| `:checked` | Checkbox ya radio selected ho |
+| `:disabled` | Form control disabled ho |
+| `:first-child` | Parent ka pehla child |
+| `:last-child` | Parent ka last child |
+| `:nth-child(n)` | Parent ka nth child |
 
----
-
-## Practical Use
+## `:hover` Example
 
 ```css
-/* Button par hover */
-button:hover { background-color: darkblue; }
-
-/* Click ke waqt */
-button:active { transform: scale(0.95); }
-
-/* Input mein focus */
-input:focus { border: 2px solid blue; outline: none; }
-
-/* Link visited */
-a:visited { color: purple; }
+button:hover {
+  background-color: black;
+  color: white;
+}
 ```
 
----
+Yahan jab mouse button ke upar aayega, button ka background black aur text white ho jayega.
 
-## State Aur Structure Pseudo Classes
-
-| Qisam | Examples | Matlab |
-|-------|----------|--------|
-| User interaction | `:hover`, `:active`, `:focus` | User ki current action/state |
-| Form state | `:checked`, `:disabled`, `:valid` | Control ki halat |
-| Link state | `:link`, `:visited` | Link history/state |
-| Structure | `:first-child`, `:last-child`, `:nth-child()` | DOM mein position |
-
-Pseudo class colon (`:`) use karti hai. Pseudo-element, jaise `::before`, double colon use karta aur element ka ek virtual part target karta hai.
-
----
-
-## Selectors Ke Sath Combine Karna
+## `:active` Example
 
 ```css
-.menu a:hover { color: orange; }
-input:focus { outline: 2px solid blue; }
-li:first-child { font-weight: bold; }
-button.primary:active { transform: scale(0.98); }
+button:active {
+  background-color: blue;
+  color: white;
+}
 ```
 
-Ek selector par multiple pseudo-classes bhi ho sakti hain:
+Yahan jab button press ho raha hoga, active style apply hogi.
+
+## `:focus` Example
 
 ```css
-button:hover:enabled { background-color: navy; }
+input:focus {
+  border: 3px solid red;
+  background-color: lightgray;
+}
 ```
 
----
+Yahan input field click ya keyboard Tab se focus me aaye to style change hogi.
 
-## Accessibility
+## User Interaction Pseudo Classes
 
-- Sirf `:hover` par zaroori information depend na karein; touch aur keyboard users hover nahi kar sakte.
-- Focus indicator ko bina replacement ke remove na karein.
-- Color change ke sath border, underline ya doosra visible cue dena useful hota hai.
-- Interactive behavior ke liye semantic `<button>` aur `<a>` elements prefer karein.
+Ye pseudo classes user ke action ke mutabiq kaam karti hain:
 
----
+- `:hover` mouse movement ke sath
+- `:active` click press ke sath
+- `:focus` selected element ke sath
+
+## Form State Pseudo Classes
+
+Form controls ke sath bhi pseudo classes use hoti hain:
+
+```css
+input:checked {
+  outline: 2px solid green;
+}
+
+input:disabled {
+  opacity: 0.5;
+}
+```
+
+## Structure Pseudo Classes
+
+Kuch pseudo classes element ki position ko target karti hain:
+
+```css
+li:first-child {
+  color: red;
+}
+
+li:last-child {
+  color: blue;
+}
+
+li:nth-child(2) {
+  color: green;
+}
+```
+
+## Pseudo Class Aur Pseudo Element Me Farq
+
+Pseudo class single colon `:` use karti hai.
+
+Example:
+
+```css
+a:hover {
+  color: red;
+}
+```
+
+Pseudo element double colon `::` use karta hai.
+
+Example:
+
+```css
+p::first-line {
+  color: blue;
+}
+```
+
+Short farq:
+
+- Pseudo class element ki state target karti hai
+- Pseudo element element ka specific part target karta hai
+
+## Accessibility Important Point
+
+Sirf `:hover` par important information depend nahi karni chahiye.
+
+Reason:
+
+Mobile users aur keyboard users hover use nahi karte.
+
+Focus style ko visible rakhna bohat zaroori hai.
+
+Example:
+
+```css
+button:focus {
+  outline: 3px solid yellow;
+}
+```
 
 ## Common Mistakes
 
-- `.button :hover` mein space dena descendant ki hover state dhoondta hai; `.button:hover` khud button ko target karta hai.
-- `::hover` galat hai; hover pseudo-class single colon leti hai.
-- `:active` ko permanent selected state samajhna; yeh aam tor par press ke waqt hoti hai.
+### Mistake 1: Space laga dena
 
----
+Galat:
 
-## Yaad Rakho
-- Pseudo class element ki **state** target karti hai
-- Real element nahi badalta — sirf styling temporarily lagti hai
-- `:hover` aur `:active` sabse zyada use hote hain
-- Pseudo-class selector ki specificity class jaisi category mein count hoti hai
+```css
+.button :hover {
+  color: red;
+}
+```
+
+Theek:
+
+```css
+.button:hover {
+  color: red;
+}
+```
+
+### Mistake 2: Double colon use karna
+
+Galat:
+
+```css
+button::hover {
+  color: red;
+}
+```
+
+Theek:
+
+```css
+button:hover {
+  color: red;
+}
+```
+
+### Mistake 3: `:active` ko permanent state samajhna
+
+`:active` sirf press/click ke waqt hoti hai.
+
+Permanent selected state ke liye usually class ya JavaScript use hota hai.
+
+## Short Summary
+
+Pseudo classes element ki state ko target karti hain.
+
+Part 1 me hum ne basic interaction states cover ki hain:
+
+- `:hover`
+- `:active`
+- `:focus`
+
+Ye teeno user interaction samajhne ke liye bohat important hain.

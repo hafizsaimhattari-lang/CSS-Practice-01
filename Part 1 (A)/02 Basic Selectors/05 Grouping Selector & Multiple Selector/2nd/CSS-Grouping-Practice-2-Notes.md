@@ -41,7 +41,13 @@ body {
 
 `p`, `h1` aur `h2` sab ko red border, rounded corners aur padding milti hai. Universal selector sab elements ka text center aur white karta hai.
 
-> Original practice rule mein `p` do baar likha hua hai. Duplicate selector result nahi badalta, lekin clean code mein har selector ek baar likhna behtar hai.
+Is practice me selector list clean rakhi gayi hai:
+
+```css
+p, h1, h2
+```
+
+Har selector ek baar likha gaya hai. Agar selector duplicate ho bhi jaye to result usually same rehta hai, lekin proper code me repeated selector avoid karna behtar hota hai.
 
 ---
 
@@ -60,3 +66,15 @@ h1 p  { } /* sirf h1 ke andar wala p select */
 - Group ke har selector par poora declaration block apply hota hai.
 - Duplicate selector ki zaroorat nahi hoti.
 - Grouping code ko short aur maintainable banati hai.
+
+## Common Mistakes
+
+- Comma bhool jana: `h1 p` ka matlab grouping nahi, descendant selector hota hai.
+- Same selector ko baar baar likhna.
+- Grouping me unrelated selectors ko ek sath rakh dena.
+
+## Best Practice
+
+Agar multiple elements ko same CSS deni ho, to grouping selector use karo.
+
+Lekin agar kisi element ki styling different hai, to us ke liye separate rule likhna zyada readable hota hai.

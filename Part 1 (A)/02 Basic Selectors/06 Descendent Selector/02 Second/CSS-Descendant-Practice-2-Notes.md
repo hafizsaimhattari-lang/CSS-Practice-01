@@ -55,3 +55,40 @@ Paragraph `div p` aur `div .paragraph` dono se match hota hai. Class selector zy
 - Descendant combinator ke dono taraf kisi bhi qisam ka selector aa sakta hai.
 - Ek element ek waqt mein multiple rules se match ho sakta hai.
 - Conflict ki surat mein specificity aur source order decide karte hain ke kaunsi value apply hogi.
+
+## Browser Mein Result
+
+Is practice mein paragraph aur heading dono `div` ke andar hain.
+
+Result:
+
+- `div p` aur `div h1` basic styling dete hain.
+- `.paragraph` class wala selector paragraph ko zyada specific styling deta hai.
+- `#main-heading` ID wala selector heading ko zyada specific styling deta hai.
+
+## Specificity Simple Samajh
+
+Specificity ka matlab hai selector ki power.
+
+Generally:
+
+```text
+ID selector > Class selector > Element selector
+```
+
+Is liye:
+
+- `div #main-heading` zyada strong hai
+- `div .paragraph` element selector se zyada strong hai
+
+## Common Mistakes
+
+- ID ko CSS mein `.` se target karna.
+- Class ko CSS mein `#` se target karna.
+- Specificity conflict samjhe bina sochna ke CSS kaam nahi kar rahi.
+
+## Best Practice
+
+ID selectors ko kam use karo.
+
+Reusable design ke liye classes zyada flexible hoti hain.

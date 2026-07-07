@@ -64,3 +64,41 @@ Yahan do complete descendant selectors comma se group hue hain.
 - Descendant direct child bhi ho sakta hai aur deeply nested bhi.
 - Class ke sath `.vip-box p` aur ID ke sath `#vip-box p` likh sakte hain.
 - Bahar ka matching element select nahi hota.
+
+## Browser Mein Result
+
+Is practice mein:
+
+- `div` ke andar wale paragraphs red aur bold show hote hain.
+- `div` ke andar wali headings blue aur bold show hoti hain.
+- Border aur padding ki wajah se elements boxed feel dete hain.
+
+## Important Concept
+
+`div p` ka matlab hai:
+
+```text
+div ke andar jitne bhi p elements hain
+```
+
+Ye sirf direct child tak limited nahi hota.
+
+Agar paragraph nested level par bhi ho, tab bhi descendant selector usay select kar sakta hai.
+
+## Common Mistakes
+
+- `divp` likh dena; ye invalid/custom tag jaisa ban jata hai.
+- `div > p` aur `div p` ko same samajhna.
+- Bahar ke paragraph par effect expect karna.
+
+## Best Practice
+
+Descendant selector ko zyada long na banao.
+
+Readable selector behtar hota hai:
+
+```css
+.card p {
+  color: red;
+}
+```

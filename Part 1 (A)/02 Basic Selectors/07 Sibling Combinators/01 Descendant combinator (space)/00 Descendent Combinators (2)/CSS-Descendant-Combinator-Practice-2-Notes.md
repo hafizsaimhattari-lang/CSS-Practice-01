@@ -45,3 +45,43 @@ Ek hi paragraph `div p` aur `div .paragraph` dono ko match karta hai. Class wala
 - Space combinator tag, class aur ID sab ke sath kaam karta hai.
 - Ek element multiple selectors se match ho sakta hai.
 - Specificity conflicting property ka winner decide karti hai.
+
+## Practice Ka Result
+
+Is practice mein same elements par multiple selectors match karte hain.
+
+Paragraph:
+
+```css
+div p
+div .paragraph
+```
+
+Heading:
+
+```css
+div h1
+div #main-heading
+```
+
+Class aur ID selectors zyada specific hain, is liye unki border styling final result mein jeetti hai.
+
+## Specificity Yaad Rakhna
+
+Simple order:
+
+```text
+ID > Class > Element
+```
+
+Is liye `#main-heading` wali styling normal `h1` selector se stronger hoti hai.
+
+## Common Mistakes
+
+- Specificity ko ignore karna.
+- Same property multiple selectors mein likh kar confuse ho jana.
+- Class aur ID symbols mix karna.
+
+## Best Practice
+
+Practice ke liye ID selector theek hai, lekin real reusable CSS mein class selector zyada useful hota hai.

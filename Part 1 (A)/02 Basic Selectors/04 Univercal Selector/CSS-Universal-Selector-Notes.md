@@ -13,6 +13,8 @@ Page ke har ek element ko ek sath select karta hai. `*` (asterisk) ka nishaan us
 
 ## Hamari Practice File: `01 Univercal Selector.html` + `.css`
 
+Note: Folder/file name me `Univercal` spelling existing hai, lekin topic ka correct naam **Universal Selector** hai.
+
 ### CSS:
 ```css
 /* "Page par jo kuch bhi hai, sab ko pakar lo!" */
@@ -29,7 +31,7 @@ Page ke har ek element ko ek sath select karta hai. `*` (asterisk) ka nishaan us
 
 ### HTML:
 ```html
-<h1>Univercal Selector Practice</h1>
+<h1>Universal Selector Practice</h1>
 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
 ```
 

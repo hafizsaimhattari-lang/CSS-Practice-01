@@ -46,3 +46,39 @@ Comma ke dono taraf complete selectors likhna zaroori hai.
 - `div` ke andar sab `h1` blue hote hain.
 - `div` se bahar ka `p` ya `h1` in rules se match nahi karega.
 - Space direct aur deeply nested dono descendants ko select kar sakti hai.
+
+## Practice Ka Purpose
+
+Ye file descendant combinator ka basic behavior repeat karwati hai.
+
+Yahan main focus ye hai ke selector mein space ka matlab hota hai:
+
+```text
+andar kahin bhi
+```
+
+Example:
+
+```css
+div p
+```
+
+Iska matlab sirf immediate child nahi, balki `div` ke andar kahin bhi paragraph ho to target ho sakta hai.
+
+## Common Mistakes
+
+- Space ko ignore kar dena.
+- `div p` aur `div > p` ko same samajhna.
+- Bahar ke paragraph par style apply hone ki expectation rakhna.
+
+## Best Practice
+
+Descendant selectors useful hain, lekin unhein bohat zyada deeply nested mat banao.
+
+Readable selector:
+
+```css
+.content p {
+  color: red;
+}
+```

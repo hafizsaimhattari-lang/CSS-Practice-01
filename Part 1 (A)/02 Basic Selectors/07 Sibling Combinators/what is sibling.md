@@ -76,3 +76,61 @@ h1 ~ p {
 | `A ~ B` | `A` ke baad ke tamam matching `B` siblings |
 
 Dono selectors sirf forward direction mein dekhte hain aur matched elements ka parent same hona chahiye.
+
+## Sibling Combinators Ki Direction
+
+Sibling selectors hamesha left se right direction mein kaam karte hain.
+
+Example:
+
+```css
+h1 + p {
+  color: red;
+}
+```
+
+Is selector mein browser pehle `h1` dekhta hai, phir us ke foran baad wala `p` check karta hai.
+
+Ye selector `h1` se pehle aane wale paragraph ko target nahi karega.
+
+## Same Parent Rule
+
+Sibling hone ke liye parent same hona zaroori hai.
+
+Example:
+
+```html
+<section>
+  <h1>Heading</h1>
+  <p>Paragraph</p>
+</section>
+```
+
+Yahan `h1` aur `p` siblings hain.
+
+Lekin:
+
+```html
+<section>
+  <h1>Heading</h1>
+  <div>
+    <p>Paragraph</p>
+  </div>
+</section>
+```
+
+Yahan `h1` aur `p` direct siblings nahi hain, kyun ke `p` ka parent `div` hai.
+
+## Common Mistakes
+
+- Nested element ko sibling samajh lena.
+- `+` aur `~` ko same samajhna.
+- Sibling selector se previous element target karne ki koshish karna.
+
+## Short Summary
+
+Sibling woh elements hain jin ka parent same ho.
+
+`+` sirf foran agla matching sibling select karta hai.
+
+`~` baad ke tamam matching siblings select karta hai.

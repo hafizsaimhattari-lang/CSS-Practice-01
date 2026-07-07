@@ -12,7 +12,7 @@ CSS selector browser ko batata hai ke declaration block kin HTML elements par ap
 |-- 01 Element Selector/         Tag naam se select
 |-- 02 Class Selector/           .className se select
 |-- 03 Id Selector/              #idName se select
-|-- 04 Univercal Selector/       * se sab kuch
+|-- 04 Univercal Selector/       * se sab kuch (topic: Universal Selector)
 |-- 05 Grouping Selector/        Kai selectors ek sath
 |-- 06 Descendent Selector/      Nested elements
 |-- 07 Sibling Combinators/      Element relationships

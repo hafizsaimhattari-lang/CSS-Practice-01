@@ -62,3 +62,33 @@ CSS `<head>` ke `<style>` tag mein likhi hai, lekin class selector ka syntax ext
 - Ek class mukhtalif HTML tags par lag sakti hai.
 - Class ka naam case-sensitive hota hai: `Horizontal-Line` aur `horizontal-line` alag names hain.
 - Internal ya External CSS se selector ka behavior nahi badalta; sirf CSS likhne ki jagah badalti hai.
+
+## Browser Mein Result
+
+Is practice mein small headings aur large headings do groups mein divide hoti hain.
+
+- `.small-heading` wali headings blue background ke sath choti size mein show hoti hain.
+- `.large-heading` wali headings red background ke sath bari size mein show hoti hain.
+- `<hr>` ko `.Horizontal-Line` class se alag style milti hai.
+
+## Internal CSS Ka Point
+
+Yahan CSS same HTML file ke andar `<style>` tag mein likhi gayi hai.
+
+Lekin selector ka rule same rehta hai:
+
+```css
+.class-name {
+  property: value;
+}
+```
+
+## Common Mistakes
+
+- Class name HTML aur CSS mein same na rakhna.
+- CSS mein `.small-heading` ke bajaye `small-heading` likhna.
+- Internal CSS ko `<body>` mein randomly likhna; proper jagah `<head>` ke andar `<style>` tag hota hai.
+
+## Best Practice
+
+Practice ke liye internal CSS theek hai, lekin larger project mein external CSS zyada clean hoti hai.

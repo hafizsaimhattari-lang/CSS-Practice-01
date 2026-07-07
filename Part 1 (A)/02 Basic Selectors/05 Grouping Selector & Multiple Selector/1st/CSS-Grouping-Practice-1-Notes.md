@@ -57,3 +57,38 @@ Har comma ek naya selector shuru karta hai. Comma bhoolne par selector ka matlab
 - Element, class aur ID selectors ko group kiya ja sakta hai.
 - Is file mein class grouping aur element grouping same result dikhati hain.
 - Real project mein same declarations ko ek grouped rule mein rakhna zyada saaf hota hai.
+
+## Browser Mein Result
+
+Is practice mein headings aur paragraphs ko same type ki box styling milti hai.
+
+Result:
+
+- Text center align hota hai.
+- Border yellow hota hai.
+- Corners rounded hote hain.
+- Padding ki wajah se content border se chipakta nahi.
+
+## Grouping Selector Ka Faida
+
+Agar hume `h1`, `h2`, `h3`, aur `p` sab par same CSS lagani ho, to alag alag rules likhne ki zaroorat nahi.
+
+Clean tareeqa:
+
+```css
+h1, h2, h3, p {
+  text-align: center;
+}
+```
+
+## Common Mistakes
+
+- Comma ke bajaye space likh dena.
+- Grouping mein incomplete selector likhna.
+- Har selector ke liye same declarations repeat karna.
+
+## Best Practice
+
+Sirf woh selectors group karo jin ka design waqai same ho.
+
+Jis element ka design different ho, us ke liye separate rule likho.
