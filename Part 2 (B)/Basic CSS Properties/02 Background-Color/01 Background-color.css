@@ -1,0 +1,59 @@
+/* Body selector puray page ka background set karta hai */
+body {
+    /* rgb color value se body ka background dark teal ban raha hai */
+    background-color: rgb(0, 74, 74);
+}
+
+/* Div container styling */
+div {
+    /* Div ka background black rakha gaya hai */
+    background-color: black;
+
+    /* Content aur border ke darmiyan spacing */
+    padding: 10px;
+
+    /* Div ke around white border */
+    border: 5px solid white;
+
+    /* Div ke corners round karne ke liye */
+    border-radius: 20px;
+}
+
+/* Paragraph styling */
+p {
+    /* Paragraph ka background maroon hoga */
+    background-color: maroon;
+
+    /* Paragraph ka text center me hoga */
+    text-align: center;
+
+    /* Paragraph ke andar spacing */
+    padding: 5px;
+
+    /* Text ka color white */
+    color: white;
+
+    /* Paragraph ke corners round */
+    border-radius: 20px;
+
+    /* Paragraph ke around white border */
+    border: 3px solid white;
+}
+
+/* Heading styling */
+h1 {
+    /* Heading ka background blue hoga */
+    background-color: blue;
+
+    /* Heading ka text white hoga */
+    color: white;
+
+    /* Heading ke corners round */
+    border-radius: 10px;
+
+    /* Heading center align */
+    text-align: center;
+
+    /* Heading ke around white border */
+    border: 3px solid white;
+}

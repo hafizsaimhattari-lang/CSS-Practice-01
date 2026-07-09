@@ -1,81 +1,159 @@
-# 🎨 CSS - Part 1 (A) Mukammal Jaiza
+# CSS - Part 1 (A) Mukammal Jaiza
 
-## 📚 Yeh Part Kyun Seekha?
-CSS (Cascading Style Sheets) woh tool hai jis se hum apne HTML pages ko khubsoorat banate hain. Bina CSS ke webpage sirf sadda kala-safed text hota hai. Is Part mein CSS ki bunyad rakhi gayi hai.
+## Yeh Part Kyun Seekha?
 
----
+CSS ka full form Cascading Style Sheets hai.
 
-## 🗂️ Folder Structure
+CSS se hum HTML page ko style dete hain.
 
-```
+HTML structure banata hai, CSS us structure ko design deti hai.
+
+Is Part me CSS ki bunyad rakhi gayi hai:
+
+- CSS basic syntax
+- CSS likhne ke tareeqay
+- Basic selectors
+- Combinators
+- Pseudo classes
+- Basic practice
+
+## Folder Structure
+
+```text
 Part 1 (A)/
-├── 00 CSS Basic intro/         → CSS kya hoti hai, syntax kya hai
-├── 01 Types of CSS/            → Inline, Internal, External CSS ka farq
-├── 02 Basic Selectors/         → Selectors, combinators aur pseudo-classes
-└── CSS-Part1-Overview.md       → Yeh file
+|-- 00 CSS Basic intro/
+|-- 01 Types of CSS/
+|-- 02 Basic Selectors/
+|-- 03 Basic Practice/
+|-- CSS-Part1-Overview.md
 ```
 
----
+## 00 CSS Basic Intro
 
-## 🎯 Kya Kya Seekha?
+Is folder me CSS ka basic concept samjhaya gaya hai.
 
-### 📁 00 CSS Basic Intro
-- CSS kya hoti hai (HTML + CSS + JS ka kirdar)
-- Selector, Property aur Value ka concept
-- Basic CSS syntax
+Important points:
 
-### 📁 01 Types of CSS
-| Qism | Tareeqa | Use |
-|------|---------|-----|
-| Inline CSS | `style=""` seedha tag mein | Testing sirf |
-| Internal CSS | `<style>` head mein | Chote pages |
-| External CSS | Alag `.css` file + `<link>` | Professional ✅ |
+- CSS kya hoti hai
+- CSS ka kaam kya hai
+- Selector, property, aur value kya hotay hain
+- Basic CSS rule ka structure
 
-### 📁 02 Basic Selectors
-| Selector | Symbol | Kaam |
-|----------|--------|------|
-| Element | `p { }` | Tag naam se select |
-| Class | `.className` | Class se select (kai elements) |
-| ID | `#idName` | ID se select (ek element) |
-| Universal | `*` | Sab kuch select |
-| Grouping | `h1, p, div` | Kai selectors ek sath |
-| Descendant | `div p` | Andar wala element |
-| Child combinator | `>` | Direct child |
-| Sibling combinators | `+` / `~` | Foran agla ya baad ke siblings |
-| Pseudo class | `:hover`, `:active` | Element ki state |
-
----
-
-## 💡 Zaroori Yaad Rakhne Wali Batein
-- Hamesha **External CSS** use karo professional kaam mein
-- **Class** selector sabse zyada use hota hai
-- **ID** unique hoti hai — ek page pe ek hi baar
-- `*` reset ke liye use karo
-- Combinator do selectors ka HTML relationship batata hai
-- Pseudo class state ko target karti hai; naya HTML element nahi banati
-
----
-
-## Basic CSS Rule Ko Parhna
+Example:
 
 ```css
-.card > p:hover {
-    color: blue;
+h1 {
+  color: red;
 }
 ```
 
+Yahan:
+
+- `h1` selector hai
+- `color` property hai
+- `red` value hai
+
+## 01 Types of CSS
+
+CSS likhne ke 3 basic tareeqay:
+
+| Type | CSS kahan likhte hain? | Use |
+| --- | --- | --- |
+| Inline CSS | HTML tag ke `style` attribute me | Quick testing |
+| Internal CSS | HTML file ke `<style>` tag me | Small pages |
+| External CSS | Alag `.css` file me | Professional work |
+
+Best practice:
+
+External CSS zyada clean aur maintainable hoti hai.
+
+## 02 Basic Selectors
+
+Selectors se hum HTML elements ko target karte hain.
+
+Part 1 me ye selectors cover hue:
+
+| Selector | Example | Kaam |
+| --- | --- | --- |
+| Element selector | `p` | Tag name se select |
+| Class selector | `.box` | Class name se select |
+| ID selector | `#main` | Unique ID se select |
+| Universal selector | `*` | Sab elements select |
+| Grouping selector | `h1, p` | Multiple selectors ek sath |
+| Descendant selector | `div p` | Parent ke andar element |
+| Child combinator | `section > p` | Direct child |
+| Next sibling | `h1 + p` | Foran agla sibling |
+| Subsequent sibling | `h1 ~ p` | Baad ke matching siblings |
+| Pseudo class | `button:hover` | Element ki state |
+
+## 03 Basic Practice
+
+Is folder me Part 1 ke concepts ko combined practice ke form me repeat kiya gaya hai.
+
+Practice 01 me:
+
+- Element selector
+- Class selector
+- ID selector
+- Grouping selector
+- Hover
+- Selection styling
+- External CSS link
+
+use kiye gaye hain.
+
+## Basic CSS Rule Ko Kaise Parhein?
+
+```css
+.card > p:hover {
+  color: blue;
+}
+```
+
+Is rule ko yun parhein:
+
 - `.card` class wala parent
 - `>` direct child relation
-- `p` target element
+- `p` paragraph element
 - `:hover` mouse wali state
-- `color` property aur `blue` uski value
+- `color` CSS property
+- `blue` property value
 
----
+## Zaroori Yaad Rakhne Wali Batein
 
-## Agla Practical Qadam
+- External CSS professional projects me best hoti hai.
+- Class selector reusable hota hai.
+- ID selector unique hota hai.
+- Universal selector sab elements ko target karta hai.
+- Combinators HTML relationship ko target karte hain.
+- Pseudo classes element ki state ko target karti hain.
+- CSS me semicolon aur braces ka khayal rakhna zaroori hai.
 
-Ab selectors ko layout aur visual properties ke sath practice karein: box model, colors, typography, display, Flexbox aur Grid. Har example mein browser DevTools se dekhein ke kaunsa rule apply ya override ho raha hai.
+## Part 1 Ka Result
 
----
+Part 1 ke baad student ko CSS basics clear hone chahiye:
 
-**Status:** ✅ Part 1 Complete | Agla Qadam: Part 2 CSS Properties
+- CSS file link karna
+- Selectors likhna
+- Basic styling apply karna
+- Hover/focus/active states samajhna
+- Parent-child aur sibling relations samajhna
+
+## Agla Qadam
+
+Part 1 ke baad Part 2 me CSS properties ko detail me practice kiya jayega.
+
+Examples:
+
+- Color
+- Background color
+- Font properties
+- Text properties
+- Box model
+- Border
+- Margin
+- Padding
+
+## Status
+
+Part 1 complete hai, aur ab Basic Practice folder se revision bhi start ho gayi hai.

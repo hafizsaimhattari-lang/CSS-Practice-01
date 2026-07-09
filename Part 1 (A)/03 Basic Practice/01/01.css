@@ -1,0 +1,111 @@
+/* Main heading styling */
+h1 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+/* Jab user h1 ka text select karega, ye selection color apply hoga */
+h1::selection {
+    background-color: white;
+    color: black;
+}
+
+/* List wrapper ko ID selector se style kiya gaya hai */
+#div-lists {
+    background-color: darkred;
+    color: white;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+/* List wrapper par mouse lane se background black ho jayega */
+#div-lists:hover {
+    background-color: black;
+}
+
+/* List par hover karne se list text yellow ho jayega */
+ul:hover {
+    color: yellow;
+}
+
+/* Div ke text selection ka color */
+div::selection {
+    background-color: black;
+    color: white;
+}
+
+/* First paragraph ko ID selector se style kiya gaya hai */
+#halchal {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 7px;
+    text-align: center;
+    font-size: larger;
+}
+
+/* First paragraph ka selected text style */
+#halchal::selection {
+    background-color: black;
+    color: white;
+}
+
+/* h2 element selector practice */
+h2 {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 7px;
+    text-align: center;
+}
+
+/* h2 ka selected text style */
+h2::selection {
+    background-color: black;
+    color: white;
+}
+
+/* Lorem paragraph ko ID se target kiya gaya hai */
+#lorememmet-1-para {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    font-size: larger;
+}
+
+/* Grouping selector: dono h3 classes ko same text alignment */
+.h3-first,
+.h3-second {
+    text-align: center;
+}
+
+/* First h3 ka selected text style */
+.h3-first::selection {
+    background-color: black;
+    color: white;
+}
+
+/* Second h3 ka selected text style */
+.h3-second::selection {
+    background-color: black;
+    color: white;
+}
+
+/* h4 aur h5 ko grouping selector se same style */
+h4,
+h5 {
+    background-color: yellow;
+    padding: 5px;
+}
+
+/* Strong text wale paragraph ka font size */
+.hello-hi-para {
+    font-size: larger;
+}
+
+/* First h3 par hover effect */
+#hal-chal-2:hover {
+    color: red;
+}
