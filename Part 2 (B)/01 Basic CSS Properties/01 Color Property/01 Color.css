@@ -1,0 +1,17 @@
+/* Body selector puray page ko target karta hai */
+body {
+    /* Background ko black rakha gaya hai taake text colors clearly nazar aayen */
+    background-color: black;
+}
+
+/* h1 element selector */
+h1 {
+    /* h1 ka text white color ka hoga */
+    color: white;
+}
+
+/* p element selector */
+p {
+    /* Paragraph ka text white color ka hoga */
+    color: white;
+}
