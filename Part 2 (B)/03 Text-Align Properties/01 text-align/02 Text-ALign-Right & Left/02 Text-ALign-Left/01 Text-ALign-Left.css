@@ -1,0 +1,12 @@
+body {
+    background-color:maroon;
+}
+
+
+* {
+    color:white;
+}
+
+h1, p {
+    text-align:left;
+}
