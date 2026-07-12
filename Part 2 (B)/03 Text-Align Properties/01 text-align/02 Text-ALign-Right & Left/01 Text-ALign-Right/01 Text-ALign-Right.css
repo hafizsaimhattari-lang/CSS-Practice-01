@@ -1,0 +1,16 @@
+body {
+    background-color:maroon;
+}
+
+
+* {
+    color:black;
+}
+
+.Text-align-class {
+    color:black;
+    background-color:white;
+    border-radius: 10px;
+    padding:10px;
+    text-align:right;
+}
