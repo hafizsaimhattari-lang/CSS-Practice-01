@@ -1,0 +1,30 @@
+body {
+    background-color:rgb(0, 29, 29);
+    color:white;
+}
+
+h1 {
+    text-align :center;
+}
+
+.urdu  {
+    text-align:start;
+}
+
+.arabic {
+    text-align:start;
+}
+
+.hebrew {
+    text-align:start;
+}
+
+.english {
+    text-align:start;
+}
+
+div {
+    margin-bottom: 10px;
+    
+}
+
