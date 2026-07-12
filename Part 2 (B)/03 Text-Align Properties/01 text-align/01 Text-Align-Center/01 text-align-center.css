@@ -1,0 +1,33 @@
+body {
+    background-color:rgb(0, 44, 44);
+}
+
+.Text-align-class {
+    color:white;
+    background-color:black;
+    border-radius: 10px;
+    padding:10px;
+}
+.Text-align-class:hover{
+    color:yellow;
+}
+
+#heading-01 {
+    text-align:center;
+}
+
+#heading-02{
+    text-align:center;
+}
+
+#heading-03{
+    text-align:center;
+}
+
+#heading-04 {
+    text-align:center;
+}
+#heading-05 {
+    text-align:center;
+}
+
