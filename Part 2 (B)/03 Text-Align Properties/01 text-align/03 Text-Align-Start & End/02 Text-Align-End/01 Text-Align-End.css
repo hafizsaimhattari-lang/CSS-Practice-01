@@ -1,0 +1,28 @@
+body {
+    background-color:rgb(53, 0, 53);
+    color:#ffffff;
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+.urdu {
+    text-align:end;
+}
+
+.english {
+    text-align:end;
+}
+
+.arabic {
+    text-align:end;
+}
+
+.french {
+    text-align:end;
+}
+
+h1 {
+    text-align:center;
+}
