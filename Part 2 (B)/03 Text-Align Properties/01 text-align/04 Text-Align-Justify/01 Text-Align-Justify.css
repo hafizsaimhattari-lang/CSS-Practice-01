@@ -1,0 +1,58 @@
+body {
+    background-color:rgb(75, 0, 0);
+}
+
+h1 {
+    border:5px solid white;
+    padding:10px;
+    border-radius: 10px;
+    color:yellow;
+    text-align:center;
+}
+
+fieldset {
+    margin-bottom:20px;
+    padding:20px;
+    border-radius:10px;
+}
+
+p {
+    font-size:larger;
+}
+
+fieldset div {
+    background-color:maroon;
+    padding:15px;
+    border-radius:10px;
+    border:3px solid rgb(0, 204, 255);
+}
+
+h2, p {
+    color:white;
+}
+
+h2 {
+    text-align:center;
+}
+
+fieldset {
+    border: 5px solid white;
+}
+
+legend {
+    text-align:center;
+    border:2px solid gold;
+    color:white;
+    padding:5px;
+    border-radius:7px;
+}
+
+p {
+    text-align:justify;
+}
+
+div:hover{
+    background-color:black;
+    color:white;
+    border:3px solid white;
+}
