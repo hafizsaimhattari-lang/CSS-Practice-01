@@ -1,0 +1,12 @@
+body {
+    background-color:#044040;
+}
+h1 {
+    color:#ffffff;
+    text-align:center;
+    background-color:red;
+    padding:5px;
+    border:5px solid white;
+    border-radius:10px;
+
+}
