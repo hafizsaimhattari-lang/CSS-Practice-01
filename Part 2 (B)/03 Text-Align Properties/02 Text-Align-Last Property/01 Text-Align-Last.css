@@ -1,0 +1,115 @@
+body {
+    background-color:rgb(63, 0, 0);
+}
+
+header h1 {
+    background-color:white;
+    padding:10px;
+    text-align:center;
+    border-radius:10px;
+}
+
+h1:hover {
+    color:red;
+}
+
+hr {
+    border:3px solid white;
+    border-radius:7px;
+    
+}
+
+fieldset {
+    border:3px solid white;
+    border-radius:7px;
+    
+}
+
+.div-para {
+    text-align:center;
+    color:rgb(0, 183, 255);
+}
+
+legend {
+    border:3px solid white;
+    border-radius:7px;
+    padding:5px;
+    color:yellow;
+    text-align:center;
+}
+
+.h2-auto, .h2-left {
+    color:white;
+}
+
+.auto-para {
+    text-align:justify;
+    text-align-last:auto;
+    color:white;
+
+}
+
+.left-para {
+    text-align:justify;
+    text-align-last:left;
+    color:white;
+}
+
+.h2-right {
+    text-align:right;
+    color:white;
+}
+
+.right-para {
+    text-align:right;
+    text-align-last:right;
+    color:white;
+}
+
+section .h2-center {
+    text-align:center;
+    color:white;
+}
+
+.center-para {
+    text-align:center;
+    text-align-last:center;
+    color:white;
+}
+
+.h2-justify {
+    text-align:justify;
+    text-align-last:justify;
+    color:white;
+
+}
+
+.justify-para {
+    text-align:justify;
+    text-align-last:justify;
+    color:white;
+
+}
+
+.h2-start {
+    color:white;
+    text-align:start;
+
+}
+
+.start-para { 
+    color:white;
+    text-align:start;
+    text-align-last:start;
+}
+
+.h2-end {
+    color:white;
+    text-align:end;
+}
+
+.end-para {
+    color:white;
+    text-align:end;
+    text-align-last:end;
+}
