@@ -1,12 +1,26 @@
+/* Body background hexadecimal color se set kiya gaya hai */
 body {
-    background-color:#044040;
+    /* #044040 dark teal color hai */
+    background-color: #044040;
 }
-h1 {
-    color:#ffffff;
-    text-align:center;
-    background-color:red;
-    padding:5px;
-    border:5px solid white;
-    border-radius:10px;
 
+/* Heading styling */
+h1 {
+    /* #ffffff ka matlab white color */
+    color: #ffffff;
+
+    /* Text center align */
+    text-align: center;
+
+    /* Named red color background */
+    background-color: red;
+
+    /* Heading ke andar spacing */
+    padding: 5px;
+
+    /* White border */
+    border: 5px solid white;
+
+    /* Rounded corners */
+    border-radius: 10px;
 }

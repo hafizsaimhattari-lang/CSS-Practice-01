@@ -1,33 +1,55 @@
+/* Body ka background RGB color se set kiya gaya hai */
 body {
-    background-color:rgb(0, 44, 44);
+    background-color: rgb(0, 44, 44);
 }
 
-.Text-align-class {
-    color:white;
-    background-color:black;
+/* Common heading class */
+.text-align-class {
+    /* Text ka color white */
+    color: white;
+
+    /* Heading ka background black */
+    background-color: black;
+
+    /* Corners round */
     border-radius: 10px;
-    padding:10px;
-}
-.Text-align-class:hover{
-    color:yellow;
+
+    /* Heading ke andar spacing */
+    padding: 10px;
 }
 
+/* Hover par heading ka color yellow ho jayega */
+.text-align-class:hover {
+    color: yellow;
+}
+
+/* First heading center align */
 #heading-01 {
-    text-align:center;
+    text-align: center;
 }
 
-#heading-02{
-    text-align:center;
+/* Second heading center align */
+#heading-02 {
+    text-align: center;
 }
 
-#heading-03{
-    text-align:center;
+/* Third heading center align */
+#heading-03 {
+    text-align: center;
 }
 
+/* Fourth heading center align */
 #heading-04 {
-    text-align:center;
-}
-#heading-05 {
-    text-align:center;
+    text-align: center;
 }
 
+/* Fifth heading center align */
+#heading-05 {
+    text-align: center;
+}
+
+/* h2 ko bhi center align kiya gaya hai */
+h2 {
+    color: white;
+    text-align: center;
+}
