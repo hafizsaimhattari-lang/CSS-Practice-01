@@ -1,18 +1,35 @@
+/* Red named color example */
 .box-1 {
-    color:white;
-    background-color:red;
-    padding:5px;
+    /* Text ko white rakha gaya hai */
+    color: white;
 
+    /* Background me named color red use hua hai */
+    background-color: red;
+
+    /* Content aur border/edge ke darmiyan spacing */
+    padding: 5px;
 }
 
-.box-2{
-    color:white;
-    background-color:blue;
-    padding:5px;
+/* Blue named color example */
+.box-2 {
+    /* Text ko white rakha gaya hai */
+    color: white;
+
+    /* Background me named color blue use hua hai */
+    background-color: blue;
+
+    /* Box ke andar spacing */
+    padding: 5px;
 }
 
+/* Gold named color example */
 .box-3 {
-         color:black;
-         background-color:gold;
-          padding:5px;
+    /* Gold background par black text readable hota hai */
+    color: black;
+
+    /* Background me named color gold use hua hai */
+    background-color: gold;
+
+    /* Box ke andar spacing */
+    padding: 5px;
 }
