@@ -1,119 +1,158 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Page ki character encoding -->
     <meta charset="UTF-8">
+
+    <!-- Responsive page ke liye viewport setting -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Browser tab ka title -->
     <title>Vertical-Align Practice</title>
+
+    <!-- External CSS file connect ki gayi hai -->
     <link rel="stylesheet" href="01 Vertical-Align.css">
-
-
 </head>
 <body>
-    <!-- vertical-align: baseline;
-    vertical-align: top;
-    vertical-align: middle;
-    vertical-align: bottom;
-    vertical-align: text-top;
-    vertical-align: text-bottom;
-    vertical-align: sub;
-    vertical-align: super;
-    vertical-align: px;
-    vertical-align: %; -->
-
-    <!-- Sab Say Pehlay Yaay Yad Rakhain Kay Yay Property Sirf inline Elements Per Apply Hoti hai yay block Element Per Use Nahi Hoti -->
-    
-    <!-- 
-
-    vertical-align sab se zyada in cheezon ke sath use hoti hai: 
-
-    🖼️ img
-    📝 span
-    🔘 input
-    ☑️ checkbox
-    🔘 radio
-    📊 td (table cell) 
-    
+    <!--
+        vertical-align mostly inline, inline-block, inline-table elements
+        aur table cells ke sath use hoti hai.
+        Normal block element par iska effect expected tarah se nahi hota.
     -->
-     
 
-    
-    
-   
-
-    <!-- 3 makhsoos jagahon par use hoty hain -->
-     <!-- 1: Chotay Icons & Chooti Images Per
-     2: Checkbox or radio button per
-     3: Table Cells Main
-
-     1: Chotay Icons & Chooti Images Per (SVG/FontAwesome): Jab kisi button mein text ke sath ek chota sa "Search" 🔍 ya "Phone" 📞 ka icon lagana ho, taake icon aur text bilkul ek seedhi line mein aayen! 🎯
-
-     2: Checkboxes aur Radio Buttons: Forms banate waqt checkbox ☑️ aur uske sath likha hua text aksar thora aagay-peeche hota hai. Wahan vertical-align: middle; dono ko exact center mein barabar karta hai! 📝
-
-    3: Table Cells (Data Tables): HTML tables (<td>) mein data ko dabbe ke top, middle, ya bottom par perfect align karne ke liye! 📊 -->
-
-
-        <!-- Table cells ke liye vertical-align ki dictionary mein SIRF 4 ALFAZ hain:
-
-        top (Dabbe ke bilkul upar) ⬆️
-
-        middle (Dabbe ke darmiyan - Yeh tables mein default hota hai) 🎯
-
-        bottom (Dabbe ke bilkul neechay) ⬇️
-
-        baseline (Pehli line ke barabar) 📐 -->
-
+    <!-- Table example: vertical-align table cells par clear nazar aati hai -->
     <table>
-        <colgroup>
-            <col span="1">
-        </colgroup>
-    <tr>
-        <th class="th-1">Cell 1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, similique? Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Ut, ipsa? Cum quaerat sit eius dicta! amet consectetur adipisicing elit. Fugit, similique</th>
-        <th class="th-2">Cell 2</th>
-        <th class="th-3">Cell 3</th>
-    </tr>
-    <tr>
-        <td>Cell 4 Cell 1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, similique? Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Ut, ipsa? Cum quaerat sit eius dicta! amet consectetur adipisicing elit. Fugit, similique</td>
-        <td class="td-02">Cell 5</td>
-        <td class="td-03">Cell 6</td>
-    </tr>
-    <tr>
-        <td>Cell 7 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, blanditiis distinctio? Quia porro commodi dolor? Dicta autem at error nam commodi ratione neque, fugit porro assumenda! Consequatur impedit accusantium ut?</td>
-        <td class="td-2">Cell 8</td>
-        <td class="td-3">Cell 9</td>
-    </tr>
-</table>
-<br><hr><br>
+        <tr>
+            <!-- Pehli cell me long text hai taake baqi cells ki vertical position compare ho sake -->
+            <th class="th-1">
+                Cell 1 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                <br>
+                Ut, ipsa? Cum quaerat sit eius dicta!
+            </th>
 
-<p>Lorem ipsum dolor sit, amet <span> consectetur </span> adipisicing elit. Officiis, quam!</p>
+            <!-- Ye heading cell top alignment practice ke liye hai -->
+            <th class="th-2">Cell 2</th>
 
-<br><hr><br>
-    <p>Lorem ipsum dolor <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ89LjToboGZK71ZgeuRPQ19SrjlTNMSbh9B7CX69ldkg&s=10" alt="Girl-Image" width="50px"> sit amet consectetur adipisicing elit. Excepturi, eligendi.</p>
+            <!-- Ye heading cell top alignment practice ke liye hai -->
+            <th class="th-3">Cell 3</th>
+        </tr>
 
-<br><hr><br>
-<label for="checkbox">Checkmark This:</label>
-<input type="checkbox" id="checkbox">
+        <tr>
+            <!-- Long paragraph wali table cell -->
+            <td>
+                Cell 4 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                <br>
+                Ut, ipsa? Cum quaerat sit eius dicta!
+            </td>
 
-<label for="radio">Select This:</label>
-<input type="radio" class="radio" name="radio">
-<input type="radio" class="radio" name="radio">
-<input type="radio" class="radio" name="radio">
-<br><hr><br>
+            <!-- Ye cell middle alignment practice ke liye hai -->
+            <td class="td-02">Cell 5</td>
 
-<p >Baseline : <img src="https://cdn-icons-png.flaticon.com/512/276/276020.png" alt="Star-image" width="20px" id="baseline">        Lorem ipsum dolor sit amet.</p>
+            <!-- Ye cell middle alignment practice ke liye hai -->
+            <td class="td-03">Cell 6</td>
+        </tr>
 
-<p>Top : <img src="https://cdn-icons-png.flaticon.com/512/276/276020.png" alt="Star-image" width="20px"  id="top">              Lorem ipsum dolor sit amet.</p>
+        <tr>
+            <!-- Long text wali cell, height create karne ke liye -->
+            <td>
+                Cell 7 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate, blanditiis distinctio? Quia porro commodi dolor?
+            </td>
 
-<p > Middle : <img src="https://cdn-icons-png.flaticon.com/512/276/276020.png" alt="Star-image" width="20px" id="middle">       Lorem ipsum dolor sit amet.</p>
+            <!-- Ye cell bottom alignment practice ke liye hai -->
+            <td class="td-2">Cell 8</td>
 
-<p >Bottom : <img src="https://cdn-icons-png.flaticon.com/512/276/276020.png" alt="Star-image" width="20px" id="bottom">        Lorem ipsum dolor sit amet.</p>
+            <!-- Ye cell bottom alignment practice ke liye hai -->
+            <td class="td-3">Cell 9</td>
+        </tr>
+    </table>
 
-<p >Superscript : <img src="https://cdn-icons-png.flaticon.com/512/276/276020.png" alt="Star-image" width="20px" id="super">    Lorem ipsum dolor sit amet.</p>
+    <br>
+    <hr>
+    <br>
 
-<p >Subscript : <img src="https://cdn-icons-png.flaticon.com/512/276/276020.png" alt="Star-image" width="20px" id="sub">        Lorem ipsum dolor sit amet.</p>
+    <!-- Inline span example: span inline element hai -->
+    <p>
+        Lorem ipsum dolor sit, amet
+        <span>consectetur</span>
+        adipisicing elit. Officiis, quam!
+    </p>
 
-<p >text-Top : <img src="https://cdn-icons-png.flaticon.com/512/276/276020.png" alt="Star-image" width="20px" id="text-top">        Lorem ipsum dolor sit amet.</p>
+    <br>
+    <hr>
+    <br>
 
-<p >text-Bottom : <img src="https://cdn-icons-png.flaticon.com/512/276/276020.png" alt="Star-image" width="20px" id="text-bottom">      Lorem ipsum dolor sit amet.</p>
+    <!-- Image inline content ke sath vertical-align practice -->
+    <p>
+        Lorem ipsum dolor
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ89LjToboGZK71ZgeuRPQ19SrjlTNMSbh9B7CX69ldkg&s=10" alt="Girl image" width="50">
+        sit amet consectetur adipisicing elit. Excepturi, eligendi.
+    </p>
 
+    <br>
+    <hr>
+    <br>
+
+    <!-- Checkbox aur radio controls ke sath vertical-align: middle useful hota hai -->
+    <label for="checkbox">Checkmark This:</label>
+    <input type="checkbox" id="checkbox">
+
+    <label for="radio-1">Select This:</label>
+    <input type="radio" class="radio" id="radio-1" name="radio">
+    <input type="radio" class="radio" id="radio-2" name="radio">
+    <input type="radio" class="radio" id="radio-3" name="radio">
+
+    <br>
+    <hr>
+    <br>
+
+    <!-- Neeche examples me same small icon par different vertical-align values apply hain -->
+    <p>
+        Baseline:
+        <img src="https://cdn-icons-png.flaticon.com/512/276/276020.png" alt="Star image" width="20" id="baseline">
+        Lorem ipsum dolor sit amet.
+    </p>
+
+    <p>
+        Top:
+        <img src="https://cdn-icons-png.flaticon.com/512/276/276020.png" alt="Star image" width="20" id="top">
+        Lorem ipsum dolor sit amet.
+    </p>
+
+    <p>
+        Middle:
+        <img src="https://cdn-icons-png.flaticon.com/512/276/276020.png" alt="Star image" width="20" id="middle">
+        Lorem ipsum dolor sit amet.
+    </p>
+
+    <p>
+        Bottom:
+        <img src="https://cdn-icons-png.flaticon.com/512/276/276020.png" alt="Star image" width="20" id="bottom">
+        Lorem ipsum dolor sit amet.
+    </p>
+
+    <p>
+        Superscript:
+        <img src="https://cdn-icons-png.flaticon.com/512/276/276020.png" alt="Star image" width="20" id="super">
+        Lorem ipsum dolor sit amet.
+    </p>
+
+    <p>
+        Subscript:
+        <img src="https://cdn-icons-png.flaticon.com/512/276/276020.png" alt="Star image" width="20" id="sub">
+        Lorem ipsum dolor sit amet.
+    </p>
+
+    <p>
+        Text Top:
+        <img src="https://cdn-icons-png.flaticon.com/512/276/276020.png" alt="Star image" width="20" id="text-top">
+        Lorem ipsum dolor sit amet.
+    </p>
+
+    <p>
+        Text Bottom:
+        <img src="https://cdn-icons-png.flaticon.com/512/276/276020.png" alt="Star image" width="20" id="text-bottom">
+        Lorem ipsum dolor sit amet.
+    </p>
 </body>
 </html>

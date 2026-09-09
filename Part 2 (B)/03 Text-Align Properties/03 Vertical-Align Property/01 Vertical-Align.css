@@ -1,337 +1,109 @@
-    /*? vertical-align: inherit; */
+﻿/*
+    vertical-align property mostly inline, inline-block, inline-table elements
+    aur table cells ke sath use hoti hai.
 
-    /*? vertical-align: initial; */
+    Common values:
+    baseline, top, middle, bottom, text-top, text-bottom, sub, super
+*/
 
-    /*? vertical-align: baseline; */
-
-    /*? vertical-align: top; */
-
-    /*? vertical-align: middle; */
-
-    /*? vertical-align: bottom; */
-
-    /*? vertical-align: text-top; */
-
-    /*? vertical-align: text-bottom; */
-
-    /*? vertical-align: sub; */
-
-    /*?  vertical-align: super; */
-
-    /*? vertical-align: + px; */
-
-    /*? vertical-align: - px; */
-
-    /*? vertical-align: + %; */
-
-    /*? vertical-align: - %; */
-
-
-    /** Sab Say Pehlay Yaay Yad Rakhain Kay Yay Property Sirf inline Elements Per Apply Hoti hai yay block Element Per Use Nahi Hoti */
-
-    
-        /* 
-
-        3 makhsoos jagahon par use hoty hain : 
-
-            1: Chotay Icons & Chooti Images Per
-            2: Checkbox or radio button per
-            3: Table Cells Main
-
-            1: Chotay Icons & Chooti Images Per (SVG/FontAwesome): Jab kisi button mein text ke sath ek chota sa "Search" 🔍 ya "Phone" 📞 ka icon lagana ho, taake icon aur text bilkul ek seedhi line mein aayen! 🎯
-
-            2: Checkboxes aur Radio Buttons: Forms banate waqt checkbox ☑️ aur uske sath likha hua text aksar thora aagay-peeche hota hai. Wahan vertical-align: middle; dono ko exact center mein barabar karta hai! 📝
-
-            3: Table Cells (Data Tables): HTML tables (<td>) mein data ko dabbe ke top, middle, ya bottom par perfect align karne ke liye! 📊  */
-
-
-table, td, tr, th {
-    border:1px solid black;
-    text-align:center;
-    border-collapse:collapse;
-    padding:5px;
+/* Table, table cells aur headings ki common styling */
+table,
+td,
+tr,
+th {
+    border: 1px solid black;
+    text-align: center;
+    border-collapse: collapse;
+    padding: 5px;
 }
 
-.th-2, .th-3 {
-    vertical-align:baseline;
-    vertical-align:top;
-
+/* Table heading cells ko top par align karna */
+.th-2,
+.th-3 {
+    vertical-align: top;
 }
 
-.td-02, .td-03 {
-    vertical-align:middle;
+/* Table data cells ko middle par align karna */
+.td-02,
+.td-03 {
+    vertical-align: middle;
 }
 
-.td-2, .td-3 {
-    vertical-align:bottom;
+/* Table data cells ko bottom par align karna */
+.td-2,
+.td-3 {
+    vertical-align: bottom;
 }
 
-
-
-span{
-    background-color:skyblue;
-    margin-right:3px;
-    margin-left:3px;
-    padding:3px;
-    border-radius:5px;
-    font-size:larger;
-    
-}
-
+/* Inline span ko visible banane ke liye styling */
 span {
-    /* vertical-align:10px;
-    vertical-align:-10px;
-    vertical-align:top;
-    vertical-align:bottom;
-    vertical-align:middle;
-    vertical-align:baseline;
-    vertical-align:sub;
-    vertical-align:super;
-    vertical-align:20%; */
-    vertical-align:-100%;
-     
+    background-color: skyblue;
+    margin-right: 3px;
+    margin-left: 3px;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: larger;
+
+    /* Negative percentage se span baseline se neeche move hota hai */
+    vertical-align: -100%;
 }
 
+/* Checkbox ko label ke sath vertically middle align karna */
 #checkbox {
-     /* vertical-align:10px;
-    vertical-align:-10px;
-    vertical-align:top;
-    vertical-align:bottom;
-    vertical-align:baseline;
-    vertical-align:sub;
-    vertical-align:super;
-    vertical-align:20%;
-    vertical-align:-20%; */
-    vertical-align:middle; 
+    vertical-align: middle;
 }
 
+/* Images inline text ke sath middle align hongi */
 img {
-     /* vertical-align:10px;
-    vertical-align:-10px;
-    vertical-align:top;
-    vertical-align:bottom;
-    vertical-align:baseline;
-    vertical-align:sub;
-    vertical-align:super;
-    vertical-align:20%;
-    vertical-align:-20%; */
-    vertical-align:middle;
+    vertical-align: middle;
 }
 
+/* Radio buttons ko label ke sath middle align karna */
 .radio {
-    
-     /* vertical-align:10px;
-    vertical-align:-10px;
-    vertical-align:top;
-    vertical-align:bottom;
-    vertical-align:baseline;
-    vertical-align:sub;
-    vertical-align:super;
-    vertical-align:20%;
-    vertical-align:-20%; */
-    vertical-align:middle;
+    vertical-align: middle;
 }
 
+/* Paragraph text center me show hoga */
 p {
-    text-align:center;
+    text-align: center;
 }
 
+/* Icon normal baseline par align hoga */
 #baseline {
-    vertical-align:baseline;
+    vertical-align: baseline;
 }
 
+/* Icon line ke top par align hoga */
 #top {
-     vertical-align:top;
+    vertical-align: top;
 }
 
+/* Icon line ke middle par align hoga */
 #middle {
-    vertical-align:middle;
+    vertical-align: middle;
 }
 
+/* Icon line ke bottom par align hoga */
 #bottom {
     vertical-align: bottom;
 }
 
+/* Icon superscript jaisa upar show hoga */
 #super {
     vertical-align: super;
 }
 
+/* Icon subscript jaisa neeche show hoga */
 #sub {
-    vertical-align:sub;
-} 
-
-#text-bottom {
-    vertical-align:text-bottom;
+    vertical-align: sub;
 }
 
+/* Icon text ke top ke according align hoga */
 #text-top {
-    vertical-align:text-top;
+    vertical-align: text-top;
 }
 
-    /*? vertical-align: inherit; */
-
-    /*? vertical-align: initial; */
-
-    /*? vertical-align: baseline; */
-
-    /*? vertical-align: top; */
-
-    /*? vertical-align: middle; */
-
-    /*? vertical-align: bottom; */
-
-    /*? vertical-align: text-top; */
-
-    /*? vertical-align: text-bottom; */
-
-    /*? vertical-align: sub; */
-
-    /*?  vertical-align: super; */
-
-    /*? vertical-align: + px; */
-
-    /*? vertical-align: - px; */
-
-    /*? vertical-align: + %; */
-
-    /*? vertical-align: - %; */
-
-
-    /** Sab Say Pehlay Yaay Yad Rakhain Kay Yay Property Sirf inline Elements Per Apply Hoti hai yay block Element Per Use Nahi Hoti */
-
-    
-        /* 
-
-        3 makhsoos jagahon par use hoty hain : 
-
-            1: Chotay Icons & Chooti Images Per
-            2: Checkbox or radio button per
-            3: Table Cells Main
-
-            1: Chotay Icons & Chooti Images Per (SVG/FontAwesome): Jab kisi button mein text ke sath ek chota sa "Search" 🔍 ya "Phone" 📞 ka icon lagana ho, taake icon aur text bilkul ek seedhi line mein aayen! 🎯
-
-            2: Checkboxes aur Radio Buttons: Forms banate waqt checkbox ☑️ aur uske sath likha hua text aksar thora aagay-peeche hota hai. Wahan vertical-align: middle; dono ko exact center mein barabar karta hai! 📝
-
-            3: Table Cells (Data Tables): HTML tables (<td>) mein data ko dabbe ke top, middle, ya bottom par perfect align karne ke liye! 📊  */
-
-
-table, td, tr, th {
-    border:1px solid black;
-    text-align:center;
-    border-collapse:collapse;
-    padding:5px;
-}
-
-.th-2, .th-3 {
-    vertical-align:baseline;
-    vertical-align:top;
-
-}
-
-.td-02, .td-03 {
-    vertical-align:middle;
-}
-
-.td-2, .td-3 {
-    vertical-align:bottom;
-}
-
-
-
-span{
-    background-color:skyblue;
-    margin-right:3px;
-    margin-left:3px;
-    padding:3px;
-    border-radius:5px;
-    font-size:larger;
-
-    /* vertical-align:10px;
-    vertical-align:-10px;
-    vertical-align:top;
-    vertical-align:bottom;
-    vertical-align:middle;
-    vertical-align:baseline;
-    vertical-align:sub;
-    vertical-align:super;
-    vertical-align:20%; */
-    vertical-align:-100%;
-     
-    
-}
-
-#checkbox {
-     /* vertical-align:10px;
-    vertical-align:-10px;
-    vertical-align:top;
-    vertical-align:bottom;
-    vertical-align:baseline;
-    vertical-align:sub;
-    vertical-align:super;
-    vertical-align:20%;
-    vertical-align:-20%; */
-    vertical-align:middle; 
-}
-
-img {
-     /* vertical-align:10px;
-    vertical-align:-10px;
-    vertical-align:top;
-    vertical-align:bottom;
-    vertical-align:baseline;
-    vertical-align:sub;
-    vertical-align:super;
-    vertical-align:20%;
-    vertical-align:-20%; */
-    vertical-align:middle;
-}
-
-.radio {
-    
-     /* vertical-align:10px;
-    vertical-align:-10px;
-    vertical-align:top;
-    vertical-align:bottom;
-    vertical-align:baseline;
-    vertical-align:sub;
-    vertical-align:super;
-    vertical-align:20%;
-    vertical-align:-20%; */
-    vertical-align:middle;
-}
-
-p {
-    text-align:center;
-}
-
-#baseline {
-    vertical-align:baseline;
-}
-
-#top {
-     vertical-align:top;
-}
-
-#middle {
-    vertical-align:middle;
-}
-
-#bottom {
-    vertical-align: bottom;
-}
-
-#super {
-    vertical-align: super;
-}
-
-#sub {
-    vertical-align:sub;
-} 
-
+/* Icon text ke bottom ke according align hoga */
 #text-bottom {
-    vertical-align:text-bottom;
-}
-
-#text-top {
-    vertical-align:text-top;
+    vertical-align: text-bottom;
 }

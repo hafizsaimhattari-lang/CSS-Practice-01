@@ -1,182 +1,199 @@
+﻿/* Universal reset: default spacing remove aur box model predictable */
 * {
     box-sizing: border-box;
-    margin:0px;
-    padding:0px;
+    margin: 0;
+    padding: 0;
 }
 
+/* Page ki base styling */
 body {
     padding: 30px;
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
 }
 
-
-
-
-header  {
-    background-color:#1f2937;
-    color:white;
-    padding:30px;
-    border-radius:10px;
+/* Top header section */
+header {
+    background-color: #1f2937;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
     margin-bottom: 30px;
 }
 
-
-
+/* Header heading ke neeche spacing */
 header h1 {
-     margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
+/* Small headings ke neeche spacing */
 h3 {
     margin-bottom: 10px;
 }
 
-
+/* Har section ko box jaisi look dena */
 section {
-    border-radius:10px;
-    padding:30px;
-    border:1px solid #bbb;
-    margin-bottom:30px;
-    margin-top:30px;
+    border-radius: 10px;
+    padding: 30px;
+    border: 1px solid #bbb;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
+/* Text align section ka main heading */
 .Heading-Text-Align {
-    margin-bottom:15px;
+    margin-bottom: 15px;
 }
 
+/* Fieldset boxes ke andar spacing */
 fieldset {
-    padding:20px;
-    margin-bottom:10px;
+    padding: 20px;
+    margin-bottom: 10px;
 }
 
-
+/* Paragraph readability ke liye line height */
 p {
     line-height: 1.8;
 }
 
-
+/* Legend ko small label box jaisi styling */
 legend {
-    border:1px solid #bbb;
-    padding:5px;
-    border-radius:5px;
+    border: 1px solid #bbb;
+    padding: 5px;
+    border-radius: 5px;
 }
 
+/* Articles ke darmiyan gap */
 article {
-    margin-bottom:15px;
+    margin-bottom: 15px;
 }
 
+/* Section headings center aur large size me */
 h2 {
-    text-align:center;
-    font-size:100px;
-    margin-bottom:30px;
+    text-align: center;
+    font-size: 100px;
+    margin-bottom: 30px;
 }
 
-
-
-    /* text-align css */
-
-.left-para { 
-    text-align:left;
+/* text-align practice: left alignment */
+.left-para {
+    text-align: left;
 }
- 
+
+/* text-align practice: right alignment */
 .right-para {
-    text-align:right;
+    text-align: right;
 }
 
+/* text-align practice: center alignment */
 .center-para {
-    text-align:center;
+    text-align: center;
 }
 
+/* text-align practice: justify alignment */
 .justify-para {
-    text-align:justify;
-}
-
-.start-para {
-    text-align:start;
-}
-
-.end-para {
-    text-align:end;
-}
-
-
-/* text-align-last practice  */
-
-.text-align-last p {
-    
     text-align: justify;
 }
 
-.text-align-last article{
-    border:1px solid #bbb;
-    padding:20px;
-    margin-bottom:30px;
+/* text-align practice: logical start alignment */
+.start-para {
+    text-align: start;
 }
 
+/* text-align practice: logical end alignment */
+.end-para {
+    text-align: end;
+}
+
+/* text-align-last section ke paragraphs ko justify base diya gaya */
+.text-align-last p {
+    text-align: justify;
+}
+
+/* text-align-last section ke article boxes */
+.text-align-last article {
+    border: 1px solid #bbb;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+/* Last line browser default/auto alignment */
 .text-align-last-auto-para {
-    text-align-last:auto;
+    text-align-last: auto;
 }
 
+/* Last line left align */
 .text-align-last-left-para {
-    text-align-last:left;
+    text-align-last: left;
 }
 
+/* Last line right align */
 .text-align-last-right-para {
-    text-align-last:right;
+    text-align-last: right;
 }
 
+/* Last line center align */
 .text-align-last-center-para {
-    text-align-last:center;
+    text-align-last: center;
 }
 
+/* Last line justify align */
 .text-align-last-justify-para {
-    text-align-last:justify;
+    text-align-last: justify;
 }
 
+/* Last line logical start par align */
 .text-align-last-start-para {
-    text-align-last:start;
+    text-align-last: start;
 }
 
+/* Last line logical end par align */
 .text-align-last-end-para {
-    text-align-last:end;
+    text-align-last: end;
 }
 
-
-/* vertical-align css */
-
+/* Vertical align examples me image ke left/right gap */
 img {
-    margin-left:5px;
-    margin-right:5px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
+/* Icon default baseline par */
 .baseline {
-    vertical-align:baseline;
+    vertical-align: baseline;
 }
 
+/* Icon line ke top par */
 .top {
-    vertical-align:top;
+    vertical-align: top;
 }
 
+/* Icon line ke middle par */
 .middle {
-    vertical-align:middle;
+    vertical-align: middle;
 }
 
+/* Icon line ke bottom par */
 .bottom {
-    vertical-align:bottom;
+    vertical-align: bottom;
 }
 
+/* Icon text ke top ke according */
 .text-top {
-    vertical-align:text-top;
+    vertical-align: text-top;
 }
 
+/* Icon text ke bottom ke according */
 .text-bottom {
-    vertical-align:text-bottom;
+    vertical-align: text-bottom;
 }
 
+/* Icon superscript jaisa upar */
 .super {
-    vertical-align:super;
+    vertical-align: super;
 }
 
+/* Icon subscript jaisa neeche */
 .sub {
-    vertical-align:sub;
+    vertical-align: sub;
 }

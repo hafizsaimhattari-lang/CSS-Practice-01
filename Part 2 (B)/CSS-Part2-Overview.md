@@ -1,4 +1,4 @@
-# CSS - Part 2 (B) Overview
+﻿# CSS - Part 2 (B) Overview
 
 ## Part 2 ka maqsad
 
@@ -39,11 +39,13 @@ Covered topics:
 
 ## 03 Text-Align Properties
 
-Is section me text alignment ki practice start hoti hai.
+Is section me text alignment ki practice hoti hai.
 
-Covered topic:
+Covered topics:
 
-- `text-align: center;`
+- `text-align`
+- `text-align-last`
+- `vertical-align`
 
 ## Basic CSS Property Rule
 
@@ -73,4 +75,4 @@ Value batati hai ke design kaisa hona chahiye.
 
 Part 2 ka focus CSS properties ko practically use karna hai.
 
-Ab hum selectors ke sath colors, backgrounds, aur text alignment jaisi properties apply kar rahe hain.
+Ab hum selectors ke sath colors, backgrounds, text alignment, aur vertical alignment jaisi properties apply kar rahe hain.
