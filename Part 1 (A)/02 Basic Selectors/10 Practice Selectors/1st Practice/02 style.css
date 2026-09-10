@@ -1,0 +1,41 @@
+
+
+* {
+    color:green;
+}
+
+.heading, .urgent {
+    color:red;
+}
+
+.board p {
+    color:blue;
+}
+
+.board > p {
+    color:blue;
+}
+
+h2 + p {
+    color:green;
+}
+
+h2 ~ p {
+    color:green;
+}
+
+.message, .message.urgent {
+    color:red;
+}
+
+[href] {
+    color:green;
+}
+
+[type="text"] {
+    color:blue;
+}
+
+#school-name, [href="rules.html"], [href="contact.html"] {
+    color:purple;
+}

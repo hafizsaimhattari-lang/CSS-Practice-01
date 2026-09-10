@@ -3,6 +3,7 @@
     Topic: Child Combinator (>)
     Objective: Parent ke direct child ko select karna
 */
+/* Direct child ka matlab “pehla bacha” nahi—saare seedhay bachay hain jo selector se match karein. */
 body {
     /* Page ka background black */
     background-color: black;

@@ -1,0 +1,39 @@
+#shop-name {
+    color:green;
+}
+
+.notice {
+    color:blue;
+}
+
+h1, h2, button {
+    color:purple;
+}
+
+.menu p {
+    color:green;
+}
+
+.menu > p {
+    color:green;
+}
+
+h2 + p {
+    color:red;
+}
+
+h2 ~ p {
+    color:green;
+}
+
+.item, .special {
+    color:blue;
+}
+
+.details > .notice {
+    color:red;
+}
+
+footer > .notice, button, #shop-name {
+    color:green;
+}

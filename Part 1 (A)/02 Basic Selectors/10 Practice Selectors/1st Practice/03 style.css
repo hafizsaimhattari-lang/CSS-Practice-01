@@ -1,0 +1,44 @@
+h1, button {
+    color: purple ;
+}
+
+.note.important {
+    color:  red ;
+}
+
+#warehouse .card.featured p {
+    color:  green ;
+}
+
+.primary > .card > p {
+    color:  blue ;
+}
+
+.primary > .card  p {
+    color:  blue ;
+}
+
+.primary .card > p {
+    color: green ;
+}
+
+.primary > .card + p {
+    color: red ;
+}
+
+.primary > .card + p {
+    color: red ;
+}
+
+.primary > .card ~ p {
+    color: blue ;
+}
+
+.primary > .card ~ .note.important {
+    color: green ;
+}
+
+.primary > .card > .inner > p {
+    color: purple ;
+}
+

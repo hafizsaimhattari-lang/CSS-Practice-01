@@ -4,6 +4,8 @@
 
 Child combinator (`>`) parent ke sirf **direct child** ko select karta hai. Zyada andar nested descendant is selector se select nahi hota.
 
+Direct child ka matlab “pehla bacha” nahi—saare seedhay bachay hain jo selector se match karein. ✅
+
 ```css
 parent > child {
     property: value;
