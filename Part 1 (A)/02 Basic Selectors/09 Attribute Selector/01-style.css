@@ -1,0 +1,43 @@
+
+/* 2 tarah kay attribute selectors hotay hain
+ayk wo jis main siraf attribute ka name diya jata hai aur doosra jis main attribute ka name aur value dono diya jata hai */
+
+nav {
+    background-color:black;
+    color:white;
+    padding:10px;
+    border-radius:5px;
+    
+}
+
+nav [href="https://www.youtube.com"] {
+    text-align:center;
+    color:white;
+}
+
+[href="https://www.youtube.com"] {
+    background-color:red;
+    color:white;
+    text-decoration:none;
+    padding:3px;
+    border-radius:5px;
+    font-size:larger;
+    text-align:center;
+}
+
+[for="q"] {
+    color:maroon;
+}
+
+[type="submit"] {
+    background-color:green;
+    color:white;
+    padding:5px;
+    border-radius:5px;
+}
+
+[placeholder="Search Google"] {
+    padding:5px;
+    border-radius:5px;
+    border:1px solid black;
+}
