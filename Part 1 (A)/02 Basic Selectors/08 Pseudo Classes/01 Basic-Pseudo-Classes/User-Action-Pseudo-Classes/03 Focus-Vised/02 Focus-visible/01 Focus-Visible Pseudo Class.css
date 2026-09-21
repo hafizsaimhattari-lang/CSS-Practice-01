@@ -1,0 +1,30 @@
+/*! 🤔 Phir :focus Aur :focus-visible Mein Farq? 🧠🎯 */
+
+/*! 🟦⌨️ :focus kehta hai: element focus mein hai. 👁️📘 */
+
+/*! 🟩✨ :focus-visible kehta hai: element focus mein hai aur focus ka nishan user ko dikhana munasib hai. ⌨️🎯 */
+
+body {
+    padding:20px;
+    background-color:rgb(0, 59, 59)
+}
+
+button {
+    padding:10px;
+    border-radius: 5px;;
+    border:1px solid white;
+}
+
+button:focus {
+    color:white;
+    background-color:black;
+    padding:10px;
+    border-radius: 5px;
+    border:1px solid white;
+    
+}
+button:focus-visible {
+    outline: 3px solid red;
+    background-color:white;
+    color:black;
+}
