@@ -1,0 +1,10 @@
+body {
+    padding:20px;
+}
+div {
+    p:only-child {
+        color:blue;
+        text-align:center;
+        text-align-last: justify;
+    }
+}

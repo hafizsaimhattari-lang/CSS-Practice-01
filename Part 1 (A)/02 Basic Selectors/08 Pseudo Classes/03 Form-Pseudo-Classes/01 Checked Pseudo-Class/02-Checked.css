@@ -1,0 +1,12 @@
+input[type="checkbox"]:checked {
+        accent-color: red;
+
+    }
+
+input[type="checkbox"] {
+    vertical-align:middle;
+}
+
+#label-checkbox {
+    color:red;
+}

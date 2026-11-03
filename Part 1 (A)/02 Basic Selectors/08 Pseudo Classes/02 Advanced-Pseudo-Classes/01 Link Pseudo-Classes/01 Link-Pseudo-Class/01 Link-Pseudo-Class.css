@@ -1,0 +1,13 @@
+a:link {
+    color:mediumseagreen;
+    text-decoration: none;
+}
+
+a:visited {
+    color:red;
+    text-decoration:underline;
+}
+
+a:link {
+    color:blue;
+}

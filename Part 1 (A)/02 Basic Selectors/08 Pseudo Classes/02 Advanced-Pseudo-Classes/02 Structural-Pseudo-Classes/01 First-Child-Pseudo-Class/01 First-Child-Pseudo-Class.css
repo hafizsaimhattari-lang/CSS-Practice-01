@@ -1,0 +1,62 @@
+body {
+    background-color:rgb(73, 0, 0);
+    padding:20px;
+
+    #ol-list-div01  li:first-child {
+        color:yellow;
+    }
+
+    #ol-list-div01   {
+        background-color: black;
+        padding:10px;
+        border-radius:10px;
+        
+    li:last-child {
+            color:yellow;
+        }
+        
+
+    }
+
+    #ol-list-div01 li:nth-child(2) {
+        color:white;
+    }
+        
+    #ol-list-div01 li:nth-child(3) {
+        color:white;
+    }
+
+    .menu {
+
+        button:last-child:hover {
+            color:red;
+            border-radius:5px;
+        }
+
+        button:first-child:hover {
+            border-radius:5px;
+            color:white;
+            background-color:black;
+        }
+
+        button:first-child:focus-visible {
+            color:blue;
+            background-color:white;
+
+        }
+
+        button:nth-child(2):hover{
+            color:blue;
+            border-radius:5px;
+        }
+
+        #Services-button{
+            background-color:black;
+            color:yellow;
+            border-radius:5px;
+        }
+        
+    }
+
+}
+

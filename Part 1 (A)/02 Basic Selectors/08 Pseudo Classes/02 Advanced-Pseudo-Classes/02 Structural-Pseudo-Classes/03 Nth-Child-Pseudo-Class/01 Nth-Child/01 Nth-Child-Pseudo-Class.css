@@ -1,0 +1,35 @@
+body {
+    background-color:black;
+}
+
+[id="div-01"] {
+    background-color:rgb(57, 57, 211);
+    padding:10px;
+    margin:15px;
+    border-radius:10px;
+
+}
+
+[id="div-02"] {
+    background-color:rgb(57, 57, 211);
+    padding:10px;
+    margin:15px;
+}
+
+#div-01 {
+    li:nth-child(even):hover{
+        color:white;
+    }
+    
+    li:nth-child(odd):hover {
+        color:yellow;
+    }
+}
+    #div-02 {
+    li:nth-child(odd):hover{
+        color:white;
+    }
+    li:nth-child(2):hover {
+        color:skyblue;
+    }
+}

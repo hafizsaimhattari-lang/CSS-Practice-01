@@ -1,0 +1,19 @@
+div {
+    background-color:maroon;
+    padding:10px;
+    border-radius:15px;
+    margin:10px;
+}
+
+li {
+    color:black;
+}
+
+div li:last-child{
+    color:yellow;
+}
+
+div li:hover {
+    color:white;
+    font-size:larger;
+}
