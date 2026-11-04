@@ -1,0 +1,27 @@
+body {
+    margin:40px;
+}
+
+form {
+
+    background-color:black;
+    padding:20px;
+    border-radius:10px;
+
+    label[for="Name-Input"], label[for="Email-Input"] {
+        color:white;
+        font-size:larger;
+        margin-right:10px;
+    }
+
+    #Name-Input, #Email-Input {
+        padding:10px;
+        border-radius:5px;
+        outline:none;
+    }
+
+    #Name-Input::placeholder, #Email-Input::placeholder {
+        color:red;
+    }
+
+}

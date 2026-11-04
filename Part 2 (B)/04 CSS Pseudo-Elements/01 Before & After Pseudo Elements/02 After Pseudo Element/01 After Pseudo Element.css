@@ -1,0 +1,30 @@
+body {
+    margin:10px;
+}
+
+h1 {
+    color: #fff;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+
+h1::after{
+    content:"😍";
+    content:" ★";
+}
+
+p {
+    color:white;
+    background-color: black;
+    border-radius: 5px;
+    padding:10px;
+    text-align: center;
+}
+
+p::after{
+    content:" ★ ";
+}
+

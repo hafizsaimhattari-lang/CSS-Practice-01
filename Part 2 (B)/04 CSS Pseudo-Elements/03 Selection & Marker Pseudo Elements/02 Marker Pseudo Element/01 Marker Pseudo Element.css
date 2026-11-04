@@ -1,0 +1,14 @@
+body {
+    margin:40px;
+}
+li::marker {
+    color: red;
+    font-size: 20px;
+    content: "→ ";
+    content:" ( ͡~ ͜ʖ ͡°) "
+}
+
+li::selection {
+    background: red;
+    color: white;
+}

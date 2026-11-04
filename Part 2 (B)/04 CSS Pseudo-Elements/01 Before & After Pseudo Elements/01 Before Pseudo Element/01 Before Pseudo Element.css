@@ -1,0 +1,24 @@
+body {
+    margin:10px;
+}
+
+h1 {
+    text-align:center;
+    color:red;
+}
+
+h1::before {
+    content:"❤️";
+    color:blue;
+}
+
+p {
+    text-align:justify;
+    color:green;
+    text-align-last:center;
+}
+
+p::before {
+    content:"Lorem 50 : ";
+    color:orange;
+}

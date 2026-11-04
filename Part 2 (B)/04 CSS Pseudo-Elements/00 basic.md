@@ -1,0 +1,2 @@
+Pseudo-element CSS ka aik special selector hota hai jo kisi HTML element ke khaas hissay ko select karke style karne deta hai.
+Pseudo Eelements css ka ayk spicial seleector hgota hai kisi khas html element kay khas hissay ko select ker kay style kernay mainm madad deta hai  
