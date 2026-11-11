@@ -1,0 +1,27 @@
+body {
+    background-color:black;
+    margin:10px;
+
+    #element-section {
+       
+    p {
+        color:white;
+    }
+    
+    p {
+        color:yellow;
+    }
+
+    }
+
+    #class-section {
+
+        .para {
+            color:green;
+        }
+
+        .para {
+            color:white;
+        }
+    }
+}

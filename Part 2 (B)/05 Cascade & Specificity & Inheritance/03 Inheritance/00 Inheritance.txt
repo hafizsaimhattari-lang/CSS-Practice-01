@@ -1,0 +1,16 @@
+ 
+Konsi properties inherit hoti hain?
+
+CSS property	 Parent se milti hai?
+color	             Haan
+font-family	         Haan
+font-size	         Haan
+font-weight	         Haan
+line-height	         Haan
+text-align	         Haan
+border	             Nahi
+margin	             Nahi
+padding	             Nahi
+bg-color	         Nahi
+width	             Nahi
+height	             Nahi
